@@ -18,9 +18,13 @@ const replayButton = document.getElementById('replayButton');
 // Load character data
 async function loadCharacters() {
     try {
-        const response = await fetch('database/avatar_characters.json');
+        const response = await fetch('database/avatar_characters.json?v=' + Date.now()); // cache-bust
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}, URL: ${response.url}`);
+        }
         const data = await response.json();
         characters = data;
+        console.log("Loaded characters:", characters.length);
     } catch (error) {
         console.error('Error loading character data:', error);
     }
