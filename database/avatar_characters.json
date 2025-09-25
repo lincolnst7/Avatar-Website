@@ -135,7 +135,8 @@
     "Special Skills": [
       "Avatar State",
       "Glassbending",
-      "Dust-Stepping"
+      "Dust-Stepping",
+      "Lavabending"
     ],
     "Affiliation/Group": [
       "Avatars",
@@ -2209,7 +2210,7 @@
       "Flight"
     ],
     "Affiliation/Group": [
-      "Animal Guide"
+      "Animal Guide", "Original Benders"
     ],
     "Appearances": [
       "Avatar: The Last Airbender",
@@ -2465,7 +2466,7 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Spirits"
+      "Spirits", "Original Benders"
     ],
     "Appearances": [
       "Avatar: The Last Airbender"
@@ -2484,11 +2485,154 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Spirits"
+      "Spirits", "Original Benders"
     ],
     "Appearances": [
       "Avatar: The Last Airbender"
     ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Admiral Zhao",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Fire Nation",
+    "Bending type": ["Firebender"],
+    "Special Skills": ["None"],
+    "Affiliation/Group": ["Fire Nation Military"],
+    "Appearances": ["Avatar: The Last Airbender", "Avatar Comics"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "General Fong",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": ["Earthbender"],
+    "Special Skills": ["None"],
+    "Affiliation/Group": ["Earth Kingdom Military"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Long Feng",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": ["Earthbender"],
+    "Special Skills": ["Brainwashing"],
+    "Affiliation/Group": ["Dai Li"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Xin Fu",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": ["Earthbender"],
+    "Special Skills": ["None"],
+    "Affiliation/Group": ["Earth Rumble Six Fighters"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Master Yu",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": ["Earthbender"],
+    "Special Skills": ["None"],
+    "Affiliation/Group": ["None"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Song",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": "None",
+    "Special Skills": ["Healing"],
+    "Affiliation/Group": ["None"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "On Ji",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Fire Nation",
+    "Bending type": "None",
+    "Special Skills": ["None"],
+    "Affiliation/Group": ["Fire Nation School"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Lo",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Fire Nation",
+    "Bending type": ["None"],
+    "Special Skills": ["None"],
+    "Affiliation/Group": ["Bending Instructor"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Li",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Fire Nation",
+    "Bending type": ["None"],
+    "Special Skills": ["None"],
+    "Affiliation/Group": ["Bending Instructor"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Ran",
+    "Gender": "Unknown",
+    "Species": "Dragon",
+    "Place of Origin": "Fire Nation",
+    "Bending type": ["Firebender"],
+    "Special Skills": ["Fire Breathing", "Flight"],
+    "Affiliation/Group": ["Sun Warriors", "Original Benders"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Shaw",
+    "Gender": "Unknown",
+    "Species": "Dragon",
+    "Place of Origin": "Fire Nation",
+    "Bending type": ["Firebender"],
+    "Special Skills": ["Fire Breathing", "Flight"],
+    "Affiliation/Group": ["Sun Warriors", "Original Benders"],
+    "Appearances": ["Avatar: The Last Airbender"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Avatar Yangchen",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Western Air Temple",
+    "Bending type": ["Airbender", "Waterbender", "Earthbender", "Firebender"],
+    "Special Skills": ["Avatar State"],
+    "Affiliation/Group": ["Avatars"],
+    "Appearances": ["Avatar: The Last Airbender", "Avatar Comics", "Yangchen Novels", "The Legend of Korra", "Kyoshi Novels"],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Avatar Szeto",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Fire Nation",
+    "Bending type": ["Airbender", "Waterbender", "Earthbender", "Firebender"],
+    "Special Skills": ["Avatar State", "Lavabending"],
+    "Affiliation/Group": ["Avatars", "Fire Nation Leadership"],
+    "Appearances": ["Avatar Comics", "Avatar: The Last Airbender", "The Legend of Korra"],
     "Image": "IMAGE_URL_HERE"
   }
 ]
