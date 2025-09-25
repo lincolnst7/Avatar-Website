@@ -24,11 +24,12 @@ async function loadCharacters() {
         }
         const data = await response.json();
         characters = data;
-        console.log("Loaded characters:", characters.length);
+        console.log("Characters loaded:", characters.length);
     } catch (error) {
         console.error('Error loading character data:', error);
     }
 }
+
 
 // Filter characters based on selected appearances
 function getFilteredCharacters() {
