@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "SpiritITC";
+  src: url("fonts/SpiritITC-Italic.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "SpiritITC", Arial, sans-serif;
+    /* TODO: Replace with actual background image */
+    background-image: url('Site-background-light.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Main header styles */
+.main-header {
+    text-align: center;
+    padding: 5rem;
+}
+
+.logo-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-logo {
+    width: 100%;
+    height: auto;
+}
+
+/* Sticky navigation styles */
+.sticky-nav {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.sticky-nav.visible {
+    top: 0;
+}
+
+.nav-logo {
+    height: 40px;
+}
+
+.nav-logo-img {
+    height: 100%;
+    width: auto;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+    transition: 0.3s;
+}
+
+/* Menu items styles */
+.menu-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.menu-items a:hover {
+    color: #ffd700;
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Game button styles */
+.game-button {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.game-button:hover {
+    transform: scale(1.02);
+}
+
+.button-background {
+    height: 200px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-background h2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .menu-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-items a {
+        padding: 1rem;
+        text-align: center;
+    }
+}
