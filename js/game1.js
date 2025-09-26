@@ -18,17 +18,22 @@ const replayButton = document.getElementById('replayButton');
 // Load character data
 async function loadCharacters() {
     try {
+<<<<<<< HEAD
         const response = await fetch('database/avatar_characters.json');
+=======
+        const response = await fetch('database/avatar_characters.json?cacheBust=' + Date.now());
+>>>>>>> 9db7dfb1a5ca27391c0b1f763ef0b322fa240f75
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}, URL: ${response.url}`);
         }
         const data = await response.json();
         characters = data;
-        console.log("Loaded characters:", characters.length);
+        console.log("Characters loaded:", characters.length);
     } catch (error) {
         console.error('Error loading character data:', error);
     }
 }
+
 
 // Filter characters based on selected appearances
 function getFilteredCharacters() {
