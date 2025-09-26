@@ -9,13 +9,13 @@
 }
 
 @font-face {
-  font-family: "LockRegular";
-  src: url("/Avatar-Website/fonts/Lock-Regular.woff2") format("woff2");
+    font-family: "LockeRegular";
+    src: url("/Avatar-Website/fonts/Locke-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "AvatarAirbender";
-  src: url("/Avatar-Website/fonts/AvatarAirbender.woff2") format("woff2");
+    font-family: "AvatarAirbender";
+    src: url("/Avatar-Website/fonts/AvatarAirbender.woff2") format("woff2");
 }
 
 body {
