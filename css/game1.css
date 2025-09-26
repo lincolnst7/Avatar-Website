@@ -49,15 +49,26 @@
 }
 
 .game-instructions {
-    background-image: url("../images/'AvatarPlacard.png");
-    color: white;
-    padding: 1.2rem;
-    border-radius: 8px;
-    margin: 0 auto 1.5rem auto;
+    background-image: url("../images/AvatarPlacard.png"); /* ✅ removed stray quote */
+    background-size: contain;       /* keep full image visible */
+    background-position: center;    /* center it */
+    background-repeat: no-repeat;   /* don’t tile it */
+
+    width: 80%;                     /* responsive scaling */
+    max-width: 900px;               /* don’t let it get too big */
+    aspect-ratio: 16 / 9;           /* preserve shape (replace with your image’s ratio) */
+
+    margin: 0 auto 1.5rem auto;     /* center horizontally */
+    display: flex;                  /* center text inside */
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    max-width: 900px;
-    line-height: 1.2;
+
+    color: white;
     font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 1.2rem;
+    box-sizing: border-box;         /* padding stays inside */
 }
 
 /* Instruction boxes styles */
