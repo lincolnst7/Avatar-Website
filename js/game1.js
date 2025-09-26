@@ -18,11 +18,7 @@ const replayButton = document.getElementById('replayButton');
 // Load character data
 async function loadCharacters() {
     try {
-<<<<<<< HEAD
-        const response = await fetch('database/avatar_characters.json');
-=======
-        const response = await fetch('database/avatar_characters.json?cacheBust=' + Date.now());
->>>>>>> 9db7dfb1a5ca27391c0b1f763ef0b322fa240f75
+        const response = await fetch('/Avatar-Website/database/avatar_characters.json');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}, URL: ${response.url}`);
         }
