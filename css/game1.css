@@ -140,6 +140,7 @@
     aspect-ratio: 1;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
+    font-family: "LockeRegular", Arial, sans-serif;
 }
 
 .instruction-box.green {
