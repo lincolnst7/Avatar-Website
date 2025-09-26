@@ -8,6 +8,16 @@
   src: url("/Avatar-Website/fonts/Herculanum.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "LockRegular";
+  src: url("/Avatar-Website/fonts/Lock-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "AvatarAirbender";
+  src: url("/Avatar-Website/fonts/AvatarAirbender.woff2") format("woff2");
+}
+
 body {
     margin: 0;
     padding: 0;
