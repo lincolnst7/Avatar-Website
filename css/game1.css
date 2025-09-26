@@ -49,7 +49,7 @@
 }
 
 .game-instructions {
-    background-image: url("images/AvatarPlacard.png"); /* ✅ removed stray quote */
+    background-image: url("../images/AvatarPlacard.png"); /* ✅ removed stray quote */
     background-size: contain;       /* keep full image visible */
     background-position: center;    /* center it */
     background-repeat: no-repeat;   /* don’t tile it */
