@@ -403,4 +403,21 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}/* Add these styles at the end of your game1.css file */
+
+/* Change colored boxes font to Herculanum */
+.instruction-box,
+.guess-row > div:not(.guess-input) {
+    font-family: "Herculanum", Arial, sans-serif;
+}
+
+/* Change Play and Play Again buttons to Herculanum */
+#playButton,
+#replayButton {
+    font-family: "Herculanum", Arial, sans-serif;
+}
+
+/* Change Give Up button to SpiritITC */
+#giveUpButton {
+    font-family: "SpiritITC", Arial, sans-serif;
 }

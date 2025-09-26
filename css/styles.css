@@ -3,6 +3,11 @@
   src: url("/Avatar-Website/fonts/SpiritITC-Italic.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Herculanum";
+  src: url("/Avatar-Website/fonts/Herculanum.woff2") format("woff2");
+}
+
 body {
     margin: 0;
     padding: 0;
