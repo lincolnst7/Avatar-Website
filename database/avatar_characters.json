@@ -2881,7 +2881,7 @@
     "Appearances": [
       "Avatar: The Last Airbender"],
     "Image": "IMAGE_URL_HERE"
-  }
+  },
   {
   "Name": "Yun",
   "Gender": "Male",
@@ -2906,7 +2906,7 @@
   "Gender": "Male",
   "Species": "Human",
   "Place of Origin": "Earth Kingdom",
-  "Bending type": "Earthbender",
+  "Bending type": ["Earthbender"],
   "Special Skills": [
     "Immortality"
   ],
