@@ -49,7 +49,10 @@
 }
 
 .game-instructions {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("../images/AvatarPlacard.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 1.2rem;
     border-radius: 8px;
