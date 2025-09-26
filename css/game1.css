@@ -418,7 +418,7 @@
 }
 
 /* Change Give Up button to SpiritITC */
-#giveUpButton {
-    font-family: "SpiritITC", Arial, sans-serif;
+.give-up-button {
+    font-family: "SpiritITC", Arial, sans-serif !important;
 }
 /* fjdksjafs */
