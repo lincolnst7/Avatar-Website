@@ -67,7 +67,8 @@
       "Spirit Projection"
     ],
     "Affiliation/Group": [
-      "Kataang Descendants", "New Air Nation"
+      "Kataang Descendants",
+      "New Air Nation"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -398,7 +399,7 @@
     "Species": "Human",
     "Place of Origin": "Earth Kingdom",
     "Bending type": [
-      "Airbender"
+      "None"
     ],
     "Special Skills": [
       "None"
@@ -1200,7 +1201,8 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Kataang Descendants", "New Air Nation"
+      "Kataang Descendants",
+      "New Air Nation"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -1220,7 +1222,8 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Kataang Descendants", "New Air Nation"
+      "Kataang Descendants",
+      "New Air Nation"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -1282,7 +1285,8 @@
     ],
     "Affiliation/Group": [
       "Beifong Family",
-      "Zaofu", "New Air Nation"
+      "Zaofu",
+      "New Air Nation"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -1751,7 +1755,8 @@
     ],
     "Affiliation/Group": [
       "Avatars",
-      "Team Avatar", "Fire Ferrets"
+      "Team Avatar",
+      "Fire Ferrets"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -1956,7 +1961,8 @@
       "Pro-bending"
     ],
     "Affiliation/Group": [
-      "Team Avatar", "Fire Ferrets"
+      "Team Avatar",
+      "Fire Ferrets"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -1973,11 +1979,13 @@
       "Earthbender"
     ],
     "Special Skills": [
-      "Lavabending", "Pro-bending"
+      "Lavabending",
+      "Pro-bending"
     ],
     "Affiliation/Group": [
       "Team Avatar",
-      "Earth Empire", "Fire Ferrets"
+      "Earth Empire",
+      "Fire Ferrets"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -2134,7 +2142,8 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Kataang Descendants", "New Air Nation"
+      "Kataang Descendants",
+      "New Air Nation"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -2212,7 +2221,8 @@
       "Flight"
     ],
     "Affiliation/Group": [
-      "Animal Guide", "Original Benders"
+      "Animal Guide",
+      "Original Benders"
     ],
     "Appearances": [
       "Avatar: The Last Airbender",
@@ -2468,7 +2478,8 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Spirits", "Original Benders"
+      "Spirits",
+      "Original Benders"
     ],
     "Appearances": [
       "Avatar: The Last Airbender"
@@ -2487,7 +2498,8 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Spirits", "Original Benders"
+      "Spirits",
+      "Original Benders"
     ],
     "Appearances": [
       "Avatar: The Last Airbender"
@@ -2499,10 +2511,19 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "Fire Nation",
-    "Bending type": ["Firebender"],
-    "Special Skills": ["None"],
-    "Affiliation/Group": ["Fire Nation Military"],
-    "Appearances": ["Avatar: The Last Airbender", "Avatar Comics"],
+    "Bending type": [
+      "Firebender"
+    ],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Fire Nation Military"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender",
+      "Avatar Comics"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2510,10 +2531,18 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "Earth Kingdom",
-    "Bending type": ["Earthbender"],
-    "Special Skills": ["None"],
-    "Affiliation/Group": ["Earth Kingdom Military"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Bending type": [
+      "Earthbender"
+    ],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Earth Kingdom Military"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2521,10 +2550,18 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "Earth Kingdom",
-    "Bending type": ["Earthbender"],
-    "Special Skills": ["Brainwashing"],
-    "Affiliation/Group": ["Dai Li"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Bending type": [
+      "Earthbender"
+    ],
+    "Special Skills": [
+      "Brainwashing"
+    ],
+    "Affiliation/Group": [
+      "Dai Li"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2532,10 +2569,18 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "Earth Kingdom",
-    "Bending type": ["Earthbender"],
-    "Special Skills": ["None"],
-    "Affiliation/Group": ["Earth Rumble Six Fighters"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Bending type": [
+      "Earthbender"
+    ],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Earth Rumble Six Fighters"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2543,10 +2588,18 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "Earth Kingdom",
-    "Bending type": ["Earthbender"],
-    "Special Skills": ["None"],
-    "Affiliation/Group": ["None"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Bending type": [
+      "Earthbender"
+    ],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "None"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2555,9 +2608,15 @@
     "Species": "Human",
     "Place of Origin": "Earth Kingdom",
     "Bending type": "None",
-    "Special Skills": ["Healing"],
-    "Affiliation/Group": ["None"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Special Skills": [
+      "Healing"
+    ],
+    "Affiliation/Group": [
+      "None"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2566,9 +2625,15 @@
     "Species": "Human",
     "Place of Origin": "Fire Nation",
     "Bending type": "None",
-    "Special Skills": ["None"],
-    "Affiliation/Group": ["Fire Nation School"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Fire Nation School"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2576,10 +2641,18 @@
     "Gender": "Female",
     "Species": "Human",
     "Place of Origin": "Fire Nation",
-    "Bending type": ["None"],
-    "Special Skills": ["None"],
-    "Affiliation/Group": ["Bending Instructor"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Bending type": [
+      "None"
+    ],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Bending Instructor"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2587,10 +2660,18 @@
     "Gender": "Female",
     "Species": "Human",
     "Place of Origin": "Fire Nation",
-    "Bending type": ["None"],
-    "Special Skills": ["None"],
-    "Affiliation/Group": ["Bending Instructor"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Bending type": [
+      "None"
+    ],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Bending Instructor"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2598,10 +2679,20 @@
     "Gender": "Unknown",
     "Species": "Dragon",
     "Place of Origin": "Fire Nation",
-    "Bending type": ["Firebender"],
-    "Special Skills": ["Fire Breathing", "Flight"],
-    "Affiliation/Group": ["Sun Warriors", "Original Benders"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Bending type": [
+      "Firebender"
+    ],
+    "Special Skills": [
+      "Fire Breathing",
+      "Flight"
+    ],
+    "Affiliation/Group": [
+      "Sun Warriors",
+      "Original Benders"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2609,10 +2700,20 @@
     "Gender": "Unknown",
     "Species": "Dragon",
     "Place of Origin": "Fire Nation",
-    "Bending type": ["Firebender"],
-    "Special Skills": ["Fire Breathing", "Flight"],
-    "Affiliation/Group": ["Sun Warriors", "Original Benders"],
-    "Appearances": ["Avatar: The Last Airbender"],
+    "Bending type": [
+      "Firebender"
+    ],
+    "Special Skills": [
+      "Fire Breathing",
+      "Flight"
+    ],
+    "Affiliation/Group": [
+      "Sun Warriors",
+      "Original Benders"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2620,10 +2721,25 @@
     "Gender": "Female",
     "Species": "Human",
     "Place of Origin": "Western Air Temple",
-    "Bending type": ["Airbender", "Waterbender", "Earthbender", "Firebender"],
-    "Special Skills": ["Avatar State"],
-    "Affiliation/Group": ["Avatars"],
-    "Appearances": ["Avatar: The Last Airbender", "Avatar Comics", "Yangchen Novels", "The Legend of Korra", "Kyoshi Novels"],
+    "Bending type": [
+      "Airbender",
+      "Waterbender",
+      "Earthbender",
+      "Firebender"
+    ],
+    "Special Skills": [
+      "Avatar State"
+    ],
+    "Affiliation/Group": [
+      "Avatars"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender",
+      "Avatar Comics",
+      "Yangchen Novels",
+      "The Legend of Korra",
+      "Kyoshi Novels"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2631,10 +2747,25 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "Fire Nation",
-    "Bending type": ["Airbender", "Waterbender", "Earthbender", "Firebender"],
-    "Special Skills": ["Avatar State", "Lavabending"],
-    "Affiliation/Group": ["Avatars", "Fire Nation Leadership"],
-    "Appearances": ["Avatar Comics", "Avatar: The Last Airbender", "The Legend of Korra"],
+    "Bending type": [
+      "Airbender",
+      "Waterbender",
+      "Earthbender",
+      "Firebender"
+    ],
+    "Special Skills": [
+      "Avatar State",
+      "Lavabending"
+    ],
+    "Affiliation/Group": [
+      "Avatars",
+      "Fire Nation Leadership"
+    ],
+    "Appearances": [
+      "Avatar Comics",
+      "Avatar: The Last Airbender",
+      "The Legend of Korra"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
@@ -2737,7 +2868,8 @@
       "Mako and Bolin's Family"
     ],
     "Appearances": [
-      "The Legend of Korra", "Korra Comics"
+      "The Legend of Korra",
+      "Korra Comics"
     ],
     "Image": "IMAGE_URL_HERE"
   },
@@ -2845,7 +2977,8 @@
       "Triple Threat Triad"
     ],
     "Appearances": [
-      "The Legend of Korra", "Korra Comics"
+      "The Legend of Korra",
+      "Korra Comics"
     ],
     "Image": "IMAGE_URL_HERE"
   },
@@ -2873,359 +3006,364 @@
     "Place of Origin": "Spirit World",
     "Bending type": "None",
     "Special Skills": [
-      "Healing", "Flight"
+      "Healing",
+      "Flight"
     ],
     "Affiliation/Group": [
       "Spirits"
     ],
     "Appearances": [
-      "Avatar: The Last Airbender"],
+      "Avatar: The Last Airbender"
+    ],
     "Image": "IMAGE_URL_HERE"
   },
   {
-  "Name": "Yun",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": [
-    "Earthbender"
-  ],
-  "Special Skills": [
-    "Liquidating Earth"
-  ],
-  "Affiliation/Group": [
-    "None"
-  ],
-  "Appearances": [
-    "Kyoshi Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Lao Ge",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": ["Earthbender"],
-  "Special Skills": [
-    "Immortality"
-  ],
-  "Affiliation/Group": [
-    "Flying Opera Company"
-  ],
-  "Appearances": [
-    "Kyoshi Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Xu Ping An",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Fire Nation",
-  "Bending type": "Firebender",
-  "Special Skills": [
-    "Lightning Generation"
-  ],
-  "Affiliation/Group": [
-    "Yellow Necks"
-  ],
-  "Appearances": [
-    "Kyoshi Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Amak",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Northern Water Tribe",
-  "Bending type": [
-    "Waterbender"
-  ],
-  "Special Skills": [
-    "None"
-  ],
-  "Affiliation/Group": [
-    "Northern Water Tribe"
-  ],
-  "Appearances": [
-    "Kyoshi Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Akuudan",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Southern Water Tribe",
-  "Bending type": "Waterbender",
-  "Special Skills": [
-    "None"
-  ],
-  "Affiliation/Group": [
-    "None"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Ayunerak",
-  "Gender": "Female",
-  "Species": "Human",
-  "Place of Origin": "Northern Water Tribe",
-  "Bending type": [
-    "Unknown"
-  ],
-  "Special Skills": ["None"
-  ],
-  "Affiliation/Group": [
-    "White Lotus"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Henshe",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": "None",
-  "Special Skills": [
-    "Governance",
-    "Corruption"
-  ],
-  "Affiliation/Group": [
-    "Zongdu"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Jetsun",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Air Temples",
-  "Bending type": [
-    "Airbender"
-  ],
-  "Special Skills": [
-    "Scholarship",
-    "Spiritual Guidance"
-  ],
-  "Affiliation/Group": [
-    "Air Nomads"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Jujinta",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": "None",
-  "Special Skills": [
-    "Political Leadership"
-  ],
-  "Affiliation/Group": [
-    "Zongdu of Bin-Er"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Nujian",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": "None",
-  "Special Skills": [
-    "Political Influence"
-  ],
-  "Affiliation/Group": [
-    "Zongdu"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Tayagum",
-  "Gender": "Female",
-  "Species": "Human",
-  "Place of Origin": "Northern Water Tribe",
-  "Bending type": [
-    "Waterbender"
-  ],
-  "Special Skills": [
-    "Healing",
-    "Diplomacy"
-  ],
-  "Affiliation/Group": [
-    "Northern Water Tribe"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Thapa",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": [
-    "Earthbender"
-  ],
-  "Special Skills": [
-    "Combat"
-  ],
-  "Affiliation/Group": [
-    "Yangchen's Allies"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Chaisee",
-  "Gender": "Female",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": "None",
-  "Special Skills": [
-    "Governance"
-  ],
-  "Affiliation/Group": [
-    "Zongdu"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Kalyaan",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Unknown",
-  "Bending type": "None",
-  "Special Skills": [
-    "Spiritual Sensitivity",
-    "Political Maneuvering"
-  ],
-  "Affiliation/Group": [
-    "Yangchen's Allies"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Kavik",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Northern Water Tribe",
-  "Bending type": "None",
-  "Special Skills": [
-    "Espionage",
-    "Street Smarts"
-  ],
-  "Affiliation/Group": [
-    "Yangchen's Allies"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Father Glowworm",
-  "Gender": "Male",
-  "Species": "Spirit",
-  "Place of Origin": "Spirit World",
-  "Bending type": "None",
-  "Special Skills": [
-    "Parasitic Bonding",
-    "Corruption"
-  ],
-  "Affiliation/Group": [
-    "Spirits"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Unanimity Triad - Gun",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": [
-    "Earthbender"
-  ],
-  "Special Skills": [
-    "Unanimity Bond"
-  ],
-  "Affiliation/Group": [
-    "Unanimity Triad"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Unanimity Triad - Zongdu",
-  "Gender": "Male",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": [
-    "Firebender"
-  ],
-  "Special Skills": [
-    "Unanimity Bond"
-  ],
-  "Affiliation/Group": [
-    "Unanimity Triad"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-},
-{
-  "Name": "Unanimity Triad - Te",
-  "Gender": "Female",
-  "Species": "Human",
-  "Place of Origin": "Earth Kingdom",
-  "Bending type": [
-    "Waterbender"
-  ],
-  "Special Skills": [
-    "Unanimity Bond"
-  ],
-  "Affiliation/Group": [
-    "Unanimity Triad"
-  ],
-  "Appearances": [
-    "Yangchen Novels"
-  ],
-  "Image": "IMAGE_URL_HERE"
-}
+    "Name": "Yun",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": [
+      "Earthbender"
+    ],
+    "Special Skills": [
+      "Liquidating Earth"
+    ],
+    "Affiliation/Group": [
+      "None"
+    ],
+    "Appearances": [
+      "Kyoshi Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Lao Ge",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": [
+      "Earthbender"
+    ],
+    "Special Skills": [
+      "Immortality"
+    ],
+    "Affiliation/Group": [
+      "Flying Opera Company"
+    ],
+    "Appearances": [
+      "Kyoshi Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Xu Ping An",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Fire Nation",
+    "Bending type": "Firebender",
+    "Special Skills": [
+      "Lightning Generation"
+    ],
+    "Affiliation/Group": [
+      "Yellow Necks"
+    ],
+    "Appearances": [
+      "Kyoshi Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Amak",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Northern Water Tribe",
+    "Bending type": [
+      "Waterbender"
+    ],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Northern Water Tribe"
+    ],
+    "Appearances": [
+      "Kyoshi Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Akuudan",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Southern Water Tribe",
+    "Bending type": "Waterbender",
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "None"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Ayunerak",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Northern Water Tribe",
+    "Bending type": [
+      "Unknown"
+    ],
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "White Lotus"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Henshe",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": "None",
+    "Special Skills": [
+      "Governance",
+      "Corruption"
+    ],
+    "Affiliation/Group": [
+      "Zongdu"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Jetsun",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Air Temples",
+    "Bending type": [
+      "Airbender"
+    ],
+    "Special Skills": [
+      "Scholarship",
+      "Spiritual Guidance"
+    ],
+    "Affiliation/Group": [
+      "Air Nomads"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Jujinta",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": "None",
+    "Special Skills": [
+      "Political Leadership"
+    ],
+    "Affiliation/Group": [
+      "Zongdu of Bin-Er"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Nujian",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": "None",
+    "Special Skills": [
+      "Political Influence"
+    ],
+    "Affiliation/Group": [
+      "Zongdu"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Tayagum",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Northern Water Tribe",
+    "Bending type": [
+      "Waterbender"
+    ],
+    "Special Skills": [
+      "Healing",
+      "Diplomacy"
+    ],
+    "Affiliation/Group": [
+      "Northern Water Tribe"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Thapa",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": [
+      "Earthbender"
+    ],
+    "Special Skills": [
+      "Combat"
+    ],
+    "Affiliation/Group": [
+      "Yangchen's Allies"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Chaisee",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": "None",
+    "Special Skills": [
+      "Governance"
+    ],
+    "Affiliation/Group": [
+      "Zongdu"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Kalyaan",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Unknown",
+    "Bending type": "None",
+    "Special Skills": [
+      "Spiritual Sensitivity",
+      "Political Maneuvering"
+    ],
+    "Affiliation/Group": [
+      "Yangchen's Allies"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Kavik",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Northern Water Tribe",
+    "Bending type": "None",
+    "Special Skills": [
+      "Espionage",
+      "Street Smarts"
+    ],
+    "Affiliation/Group": [
+      "Yangchen's Allies"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Father Glowworm",
+    "Gender": "Male",
+    "Species": "Spirit",
+    "Place of Origin": "Spirit World",
+    "Bending type": "None",
+    "Special Skills": [
+      "Parasitic Bonding",
+      "Corruption"
+    ],
+    "Affiliation/Group": [
+      "Spirits"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Unanimity Triad - Gun",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": [
+      "Earthbender"
+    ],
+    "Special Skills": [
+      "Unanimity Bond"
+    ],
+    "Affiliation/Group": [
+      "Unanimity Triad"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Unanimity Triad - Zongdu",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": [
+      "Firebender"
+    ],
+    "Special Skills": [
+      "Unanimity Bond"
+    ],
+    "Affiliation/Group": [
+      "Unanimity Triad"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  },
+  {
+    "Name": "Unanimity Triad - Te",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": [
+      "Waterbender"
+    ],
+    "Special Skills": [
+      "Unanimity Bond"
+    ],
+    "Affiliation/Group": [
+      "Unanimity Triad"
+    ],
+    "Appearances": [
+      "Yangchen Novels"
+    ],
+    "Image": "IMAGE_URL_HERE"
+  }
 ]
