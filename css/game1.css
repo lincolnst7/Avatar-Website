@@ -282,6 +282,7 @@
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'SpiritITC', Arial, sans-serif !important;
 }
 
 .give-up-button:hover {
@@ -417,8 +418,4 @@
     font-family: "Herculanum", Arial, sans-serif;
 }
 
-/* Change Give Up button to SpiritITC */
-.give-up-button {
-    font-family: "SpiritITC", Arial, sans-serif !important;
-}
 /* nothing */
