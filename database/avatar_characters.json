@@ -2729,7 +2729,7 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "Earth Kingdom",
-    "Bending type": "None",
+    "Bending type": "Earthbender",
     "Special Skills": [
       "None"
     ],
@@ -2737,7 +2737,7 @@
       "Mako and Bolin's Family"
     ],
     "Appearances": [
-      "The Legend of Korra"
+      "The Legend of Korra", "Korra Comics"
     ],
     "Image": "IMAGE_URL_HERE"
   },
