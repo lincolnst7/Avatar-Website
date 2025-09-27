@@ -261,14 +261,18 @@ function displayGuess(character, results) {
                 const imgWrapper = document.createElement('div');
                 imgWrapper.className = 'guess-cell-img-wrapper';
                 const img = document.createElement('img');
-                // Prepend image path if needed
+                // Robust image path logic
                 let imgSrc = character.Image || '';
-                if (imgSrc && !imgSrc.startsWith('/Avatar-Website/images/')) {
+                if (imgSrc && !imgSrc.match(/^\/?Avatar-Website\/images\//)) {
                     imgSrc = '/Avatar-Website/images/' + imgSrc.replace(/^.*[\\\/]/, '');
                 }
                 img.src = imgSrc;
                 img.alt = character.Name;
                 img.className = 'guess-cell-img';
+                // Fallback for broken images
+                img.onerror = function() {
+                    this.style.display = 'none';
+                };
                 imgWrapper.appendChild(img);
                 cell.appendChild(imgWrapper);
                 const nameDiv = document.createElement('div');

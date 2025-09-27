@@ -547,8 +547,13 @@
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    padding: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-width: 0;
+    min-height: 0;
     box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
 }
 
 .guess-cell-img-wrapper {
@@ -559,10 +564,11 @@
     justify-content: center;
     min-height: 0;
     min-width: 0;
+    aspect-ratio: 1 / 1;
 }
 
 .guess-cell-img {
-    width: 80%;
+    width: 90%;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -572,6 +578,7 @@
     display: block;
     background: #222;
     max-height: 80%;
+    max-width: 90%;
 }
 
 .guess-cell-name-label {
