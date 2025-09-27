@@ -146,16 +146,27 @@ function startGame() {
 // Add variables for tracking selected suggestion
 let currentSuggestionIndex = -1;
 
+// Helper function to normalize text for matching (removes apostrophes and makes lowercase)
+function normalizeForMatching(text) {
+    return text.toLowerCase().replace(/'/g, '');
+}
+
 // Update handleInput function
 function handleInput() {
     const input = characterInput.value.toLowerCase();
+    const normalizedInput = normalizeForMatching(input);
     autoComplete.innerHTML = '';
     currentSuggestionIndex = -1;
 
     if (input.length < 2) return;
 
     const matches = getFilteredCharacters()
-        .filter(char => char.Name.toLowerCase().includes(input))
+        .filter(char => {
+            const charName = char.Name.toLowerCase();
+            const normalizedCharName = normalizeForMatching(char.Name);
+            // Match either the original name or the normalized name (without apostrophes)
+            return charName.includes(input) || normalizedCharName.includes(normalizedInput);
+        })
         .slice(0, 5);
 
     matches.forEach((char, index) => {
@@ -190,8 +201,15 @@ characterInput.addEventListener('keydown', (e) => {
         });
     } else if (e.key === 'Enter' && currentSuggestionIndex >= 0) {
         e.preventDefault();
+        const input = characterInput.value.toLowerCase();
+        const normalizedInput = normalizeForMatching(input);
         const selectedChar = getFilteredCharacters()
-            .filter(char => char.Name.toLowerCase().includes(characterInput.value.toLowerCase()))
+            .filter(char => {
+                const charName = char.Name.toLowerCase();
+                const normalizedCharName = normalizeForMatching(char.Name);
+                // Use the same matching logic as in handleInput
+                return charName.includes(input) || normalizedCharName.includes(normalizedInput);
+            })
             .slice(0, 5)[currentSuggestionIndex];
         if (selectedChar) {
             selectSuggestion(selectedChar);

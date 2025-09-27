@@ -1017,7 +1017,7 @@
     "Image": "images/characters/Chief_Arnook.jpg"
   },
   {
-    "Name": "Kanna",
+    "Name": "Kanna (Gran Gran)",
     "Gender": "Female",
     "Species": "Human",
     "Place of Origin": "Northern Water Tribe",
@@ -1045,7 +1045,7 @@
     "Special Skills": [
       "Healing"
     ],
-    "Affiliation/Group": [],
+    "Affiliation/Group": ["None"],
     "Appearances": [
       "Avatar: The Last Airbender"
     ],
