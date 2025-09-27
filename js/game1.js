@@ -256,32 +256,25 @@ function displayGuess(character, results) {
         if (key !== 'Image') {  // Skip the Image column
             const cell = document.createElement('div');
             cell.className = `guess-cell ${result}`;
-            // For the leftmost cell (Name), add image above name
+            // For the leftmost cell (Name), add image above name, stacked vertically
             if (colIndex === 0) {
-                cell.style.display = 'flex';
-                cell.style.flexDirection = 'column';
-                cell.style.alignItems = 'center';
-                cell.style.justifyContent = 'center';
-                cell.style.height = '100%';
-                cell.style.padding = '0';
+                cell.classList.add('guess-cell-with-image');
+                const imgWrapper = document.createElement('div');
+                imgWrapper.className = 'guess-cell-img-wrapper';
                 const img = document.createElement('img');
-                img.src = character.Image;
+                // Prepend image path if needed
+                let imgSrc = character.Image || '';
+                if (imgSrc && !imgSrc.startsWith('/Avatar-Website/images/')) {
+                    imgSrc = '/Avatar-Website/images/' + imgSrc.replace(/^.*[\\\/]/, '');
+                }
+                img.src = imgSrc;
                 img.alt = character.Name;
-                img.style.display = 'block';
-                img.style.margin = '0 auto 4px auto';
-                img.style.width = '70%';
-                img.style.height = '70%';
-                img.style.objectFit = 'cover';
-                img.style.borderRadius = '6px';
-                img.style.flex = '0 0 auto';
+                img.className = 'guess-cell-img';
+                imgWrapper.appendChild(img);
+                cell.appendChild(imgWrapper);
                 const nameDiv = document.createElement('div');
+                nameDiv.className = 'guess-cell-name-label';
                 nameDiv.textContent = character[key];
-                nameDiv.style.fontSize = '0.85em';
-                nameDiv.style.marginTop = '4px';
-                nameDiv.style.textAlign = 'center';
-                nameDiv.style.width = '100%';
-                nameDiv.style.flex = '0 0 auto';
-                cell.appendChild(img);
                 cell.appendChild(nameDiv);
             } else {
                 cell.textContent = Array.isArray(character[key]) ? 

@@ -540,3 +540,49 @@
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+.guess-cell-with-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.guess-cell-img-wrapper {
+    width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 0;
+    min-width: 0;
+}
+
+.guess-cell-img {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    display: block;
+    background: #222;
+    max-height: 80%;
+}
+
+.guess-cell-name-label {
+    width: 100%;
+    text-align: center;
+    font-size: inherit;
+    line-height: 1.1;
+    margin: 0 0 2px 0;
+    padding: 0 2px 0 2px;
+    word-break: break-word;
+    font-family: inherit;
+    background: none;
+    color: inherit;
+}
