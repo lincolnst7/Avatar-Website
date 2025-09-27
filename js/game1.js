@@ -160,14 +160,32 @@ function handleInput() {
 
     if (input.length < 2) return;
 
-    const matches = getFilteredCharacters()
+    const allMatches = getFilteredCharacters()
         .filter(char => {
             const charName = char.Name.toLowerCase();
             const normalizedCharName = normalizeForMatching(char.Name);
             // Match either the original name or the normalized name (without apostrophes)
             return charName.includes(input) || normalizedCharName.includes(normalizedInput);
-        })
-        .slice(0, 5);
+        });
+    
+    // Sort matches to prioritize exact matches and matches that start with the input
+    const matches = allMatches.sort((a, b) => {
+        const aName = a.Name.toLowerCase();
+        const bName = b.Name.toLowerCase();
+        const aNormalized = normalizeForMatching(a.Name);
+        const bNormalized = normalizeForMatching(b.Name);
+        
+        // Exact match gets highest priority
+        if (aName === input || aNormalized === normalizedInput) return -1;
+        if (bName === input || bNormalized === normalizedInput) return 1;
+        
+        // Starts with input gets second priority
+        if (aName.startsWith(input) || aNormalized.startsWith(normalizedInput)) return -1;
+        if (bName.startsWith(input) || bNormalized.startsWith(normalizedInput)) return 1;
+        
+        // Then alphabetical order
+        return aName.localeCompare(bName);
+    }).slice(0, 5);
 
     matches.forEach((char, index) => {
         const div = document.createElement('div');
@@ -203,14 +221,34 @@ characterInput.addEventListener('keydown', (e) => {
         e.preventDefault();
         const input = characterInput.value.toLowerCase();
         const normalizedInput = normalizeForMatching(input);
-        const selectedChar = getFilteredCharacters()
+        
+        // Use the same sorting logic as in handleInput
+        const allMatches = getFilteredCharacters()
             .filter(char => {
                 const charName = char.Name.toLowerCase();
                 const normalizedCharName = normalizeForMatching(char.Name);
-                // Use the same matching logic as in handleInput
                 return charName.includes(input) || normalizedCharName.includes(normalizedInput);
-            })
-            .slice(0, 5)[currentSuggestionIndex];
+            });
+        
+        const sortedMatches = allMatches.sort((a, b) => {
+            const aName = a.Name.toLowerCase();
+            const bName = b.Name.toLowerCase();
+            const aNormalized = normalizeForMatching(a.Name);
+            const bNormalized = normalizeForMatching(b.Name);
+            
+            // Exact match gets highest priority
+            if (aName === input || aNormalized === normalizedInput) return -1;
+            if (bName === input || bNormalized === normalizedInput) return 1;
+            
+            // Starts with input gets second priority
+            if (aName.startsWith(input) || aNormalized.startsWith(normalizedInput)) return -1;
+            if (bName.startsWith(input) || bNormalized.startsWith(normalizedInput)) return 1;
+            
+            // Then alphabetical order
+            return aName.localeCompare(bName);
+        });
+        
+        const selectedChar = sortedMatches.slice(0, 5)[currentSuggestionIndex];
         if (selectedChar) {
             selectSuggestion(selectedChar);
         }
