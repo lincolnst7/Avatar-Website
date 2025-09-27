@@ -5,6 +5,16 @@
     padding: 1rem;
 }
 
+@font-face {
+    font-family: "LockeRegular";
+    src: url("../fonts/Locke-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "AvatarAirbender";
+    src: url("../fonts/AvatarAirbender.woff2") format("woff2");
+}
+
 /* G.instruction-box {
     flex: 1;
     max-width: 85px;
@@ -145,16 +155,20 @@
 
 .instruction-box.green {
     background-color: #4caf50;
+    font-family: 'LockeRegular', Arial, sans-serif;
+
 }
 
 .instruction-box.yellow {
     background-color: #ffd700;
     color: black;
+    font-family: 'LockeRegular', Arial, sans-serif;
 }
 
 .instruction-box.red {
     background-color: #f44336;
     align-items: center;
+    font-family: 'LockeRegular', Arial, sans-serif;
 }
 
 .game-instructions > p:first-child {
@@ -324,7 +338,7 @@
     margin: 1rem auto;
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    background-color: #4caf50;
+    background-image: url("../images/ancientscroll.png");
     color: white;
     border: none;
     border-radius: 8px;
@@ -332,9 +346,9 @@
     transition: background-color 0.3s;
 }
 
-.play-button:hover, .replay-button:hover {
+/* .play-button:hover, .replay-button:hover {
     background-color: #45a049;
-}
+} */
 
 .give-up-button {
     background-color: #ff4444;
@@ -411,16 +425,21 @@
 .guess-cell.correct {
     background-color: #4caf50;
     color: white;
+    font-family: "LockeRegular", Arial, sans-serif;
 }
 
 .guess-cell.partial {
     background-color: #ffd700;
     color: black;
+    font-family: "LockeRegular", Arial, sans-serif;
+
 }
 
 .guess-cell.incorrect {
     background-color: #f44336;
     color: white;
+    font-family: "LockeRegular", Arial, sans-serif;
+
 }
 
 /* Game complete styles */
@@ -482,7 +501,7 @@
 /* Change Play and Play Again buttons to Herculanum */
 #playButton,
 #replayButton {
-    font-family: "Herculanum", Arial, sans-serif;
+    font-family: "AvatarAirbender", Arial, sans-serif;
 }
 
 /* nothing *//* Updated button styles */
@@ -491,16 +510,17 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: transparent;
     color: black;
-    padding: 15px 30px;
+    padding: 28px 60px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.4rem;
-    margin-top: 1rem;
+    font-size: 2.1rem;
+    margin-top: 1.2rem;
     transition: transform 0.3s ease;
     font-family: "AvatarAirbender", Arial, sans-serif;
-    min-width: 150px;
+    min-width: 220px;
 }
 
 .play-button:hover, .replay-button:hover {
