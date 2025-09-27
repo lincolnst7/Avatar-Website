@@ -466,6 +466,21 @@
     margin-right: auto;
 }
 
+.character-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.character-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #333;
+    background: #222;
+}
+
 #successMessage {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -548,16 +563,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     height: 100%;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1;
     min-width: 80px;
-    max-width: 120px;
-    min-height: 80px;
-    max-height: 120px;
     box-sizing: border-box;
-    padding: 0;
+    padding: 0.25rem 0.5rem 0.5rem 0.5rem;
     overflow: hidden;
 }
 
@@ -565,7 +577,7 @@
     width: 100%;
     flex: 1 1 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     min-height: 0;
     min-width: 0;
@@ -578,8 +590,8 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 6px;
-    margin-top: 4px;
-    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-bottom: -2px;
     display: block;
     background: #222;
     max-height: 80%;
@@ -591,10 +603,28 @@
     text-align: center;
     font-size: inherit;
     line-height: 1.1;
-    margin: 0 0 2px 0;
-    padding: 0 2px 0 2px;
+    margin: 0;
+    padding: 0 2px;
     word-break: break-word;
     font-family: inherit;
     background: none;
     color: inherit;
+}
+
+/* When image is present, push the name to the bottom */
+.guess-cell-with-image:not(.no-image) {
+    justify-content: flex-end;
+}
+
+/* When image is missing, center the name */
+.guess-cell-with-image.no-image {
+    justify-content: center;
+}
+
+/* Ensure name label takes full space when no image */
+.guess-cell-with-image.no-image .guess-cell-name-label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -107,6 +107,13 @@ function startGame() {
     gameComplete.style.display = 'none';
     characterInput.value = '';
     characterInput.focus();
+    
+    // Hide character image
+    const characterImage = document.getElementById('characterImage');
+    if (characterImage) {
+        characterImage.style.display = 'none';
+        characterImage.src = '';
+    }
 
     // Always show instructions during the game
     const instructions = document.querySelector('.game-instructions');
@@ -266,14 +273,23 @@ function displayGuess(character, results) {
                 if (imgSrc && !imgSrc.match(/^\/?Avatar-Website\/images\/characters\//)) {
                     imgSrc = '/Avatar-Website/images/characters/' + imgSrc.replace(/^.*[\\\/]/, '');
                 }
-                img.src = imgSrc;
-                img.alt = character.Name;
-                img.className = 'guess-cell-img';
-                // Fallback for broken images
-                img.onerror = function() {
-                    this.style.display = 'none';
-                };
-                imgWrapper.appendChild(img);
+                
+                // Check if there's no image source initially
+                if (!imgSrc) {
+                    cell.classList.add('no-image');
+                    imgWrapper.style.display = 'none';
+                } else {
+                    img.src = imgSrc;
+                    img.alt = character.Name;
+                    img.className = 'guess-cell-img';
+                    // Fallback for broken images
+                    img.onerror = function() {
+                        this.style.display = 'none';
+                        imgWrapper.style.display = 'none';
+                        cell.classList.add('no-image');
+                    };
+                    imgWrapper.appendChild(img);
+                }
                 cell.appendChild(imgWrapper);
                 const nameDiv = document.createElement('div');
                 nameDiv.className = 'guess-cell-name-label';
@@ -310,14 +326,32 @@ function handleGuess(character) {
         gameComplete.style.display = 'block';
         gameComplete.style.marginBottom = '1rem';
         successMessage.textContent = `Congratulations! You found ${targetCharacter.Name} in ${guessCount} guesses!`;
+        
+        // Show character image
+        const characterImage = document.getElementById('characterImage');
+        let imgSrc = targetCharacter.Image || '';
+        if (imgSrc && !imgSrc.match(/^\/?Avatar-Website\/images\/characters\//)) {
+            imgSrc = '/Avatar-Website/images/characters/' + imgSrc.replace(/^.*[\\\/]/, '');
+        }
+        if (imgSrc) {
+            characterImage.src = imgSrc;
+            characterImage.alt = targetCharacter.Name;
+            characterImage.style.display = 'block';
+        }
+        
         gameArea.insertBefore(gameComplete, gameArea.firstChild);
         gameArea.classList.add('game-won');
+        
         // Hide instructions only when game is won
         const instructions = document.querySelector('.game-instructions');
         if (instructions) instructions.style.display = 'none';
+        
         // Move checkboxes to game complete area
         const checkboxContainer = document.querySelector('.checkbox-container');
         gameComplete.appendChild(checkboxContainer);
+        
+        // Scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }
 
@@ -345,15 +379,32 @@ function handleGiveUp() {
     gameComplete.style.display = 'block';
     gameComplete.style.marginBottom = '1rem';
     successMessage.textContent = `The character was ${targetCharacter.Name}!`;
+    
+    // Show character image
+    const characterImage = document.getElementById('characterImage');
+    let imgSrc = targetCharacter.Image || '';
+    if (imgSrc && !imgSrc.match(/^\/?Avatar-Website\/images\/characters\//)) {
+        imgSrc = '/Avatar-Website/images/characters/' + imgSrc.replace(/^.*[\\\/]/, '');
+    }
+    if (imgSrc) {
+        characterImage.src = imgSrc;
+        characterImage.alt = targetCharacter.Name;
+        characterImage.style.display = 'block';
+    }
+    
     gameArea.classList.add('game-won');
     gameArea.insertBefore(gameComplete, gameArea.firstChild);
-    gameArea.classList.add('game-won');
+    
     // Hide instructions only when game ends
     const instructions = document.querySelector('.game-instructions');
     if (instructions) instructions.style.display = 'none';
+    
     // Move checkboxes to game complete area
     const checkboxContainer = document.querySelector('.checkbox-container');
     gameComplete.appendChild(checkboxContainer);
+    
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Handle checkbox interactions

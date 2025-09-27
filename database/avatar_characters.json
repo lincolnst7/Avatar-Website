@@ -252,8 +252,8 @@
     "Species": "Spirit",
     "Place of Origin": "Spirit World",
     "Bending type": "None",
-    "Special Skills": [],
-    "Affiliation/Group": [],
+    "Special Skills": ["None"],
+    "Affiliation/Group": ["None"],
     "Appearances": [
       "The Legend of Korra"
     ],
@@ -2970,7 +2970,7 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "United Republic",
-    "Bending type": "None",
+    "Bending type": "Firebender",
     "Special Skills": [
       "None"
     ],
