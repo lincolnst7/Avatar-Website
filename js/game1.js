@@ -100,34 +100,33 @@ function startGame() {
     // Show/hide appropriate elements
     gameSettings.style.display = 'none';
     gameArea.style.display = 'block';
-    document.querySelector('.game-instructions').style.display = 'block';
     playButton.style.display = 'none';
     characterInput.style.display = 'block';
-    document.querySelector('.game-instructions').style.display = 'block';
-    
     guessRows.innerHTML = '';
     gameArea.classList.remove('game-won');
-    document.querySelector('.game-instructions').style.display = 'block';
-    
+    gameComplete.style.display = 'none';
+    characterInput.value = '';
+    characterInput.focus();
+
+    // Always show instructions during the game
+    const instructions = document.querySelector('.game-instructions');
+    if (instructions) {
+        instructions.style.display = 'block';
+    }
+
     // Add column headers if they don't exist
     if (!document.querySelector('.column-headers')) {
         const headers = document.createElement('div');
         headers.className = 'column-headers';
         const headerNames = ['Name', 'Gender', 'Species', 'Origin', 'Bending', 'Skills', 'Affiliation', 'Appearances'];
-        
         headerNames.forEach(name => {
             const header = document.createElement('div');
             header.className = 'column-header';
             header.textContent = name;
             headers.appendChild(header);
         });
-        
         gameArea.insertBefore(headers, guessRows);
     }
-    
-    gameComplete.style.display = 'none';
-    characterInput.value = '';
-    characterInput.focus();
 
     // Move checkboxes back to settings if they were in game complete
     const checkboxContainer = document.querySelector('.checkbox-container');
@@ -309,7 +308,9 @@ function handleGuess(character) {
         successMessage.textContent = `Congratulations! You found ${targetCharacter.Name} in ${guessCount} guesses!`;
         gameArea.insertBefore(gameComplete, gameArea.firstChild);
         gameArea.classList.add('game-won');
-        
+        // Hide instructions only when game is won
+        const instructions = document.querySelector('.game-instructions');
+        if (instructions) instructions.style.display = 'none';
         // Move checkboxes to game complete area
         const checkboxContainer = document.querySelector('.checkbox-container');
         gameComplete.appendChild(checkboxContainer);
@@ -341,10 +342,11 @@ function handleGiveUp() {
     gameComplete.style.marginBottom = '1rem';
     successMessage.textContent = `The character was ${targetCharacter.Name}!`;
     gameArea.classList.add('game-won');
-    document.querySelector('.game-instructions').style.display = 'none';
     gameArea.insertBefore(gameComplete, gameArea.firstChild);
     gameArea.classList.add('game-won');
-
+    // Hide instructions only when game ends
+    const instructions = document.querySelector('.game-instructions');
+    if (instructions) instructions.style.display = 'none';
     // Move checkboxes to game complete area
     const checkboxContainer = document.querySelector('.checkbox-container');
     gameComplete.appendChild(checkboxContainer);
