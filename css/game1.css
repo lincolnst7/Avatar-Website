@@ -504,7 +504,7 @@
 /* Change colored boxes font to Herculanum */
 .instruction-box,
 .guess-row > div:not(.guess-input) {
-    font-family: "Herculanum", Arial, sans-serif;
+    font-family: "LockeRegular", Arial, sans-serif;
 }
 
 /* Change Play and Play Again buttons to Herculanum */
