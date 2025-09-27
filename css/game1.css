@@ -73,6 +73,7 @@
     margin-bottom: 1rem;
 }
 
+/* Unified .game-instructions appearance in both game-settings and game-area */
 .game-instructions {
     background-image: url("../images/AvatarPlacard.png");
     background-size: contain;
@@ -87,8 +88,6 @@
     max-width: 600px;
     line-height: 0.9;
     font-size: 1.2rem;
-    
-    /* Center flex layout with reduced gap */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,12 +112,16 @@
     font-family: "Herculanum", Arial, sans-serif;
 }
 
-/* Special styling for the last instruction line */
+.game-instructions > p:first-child {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
 .game-instructions > p:last-child {
     font-family: "Herculanum", Arial, sans-serif;
     font-style: normal;
-    font-size: 1.3rem;
-    margin-top: -0.2rem;
+    font-size: 1.1rem;
+    margin-top: -0.3rem;
 }
 
 .game-instructions br {

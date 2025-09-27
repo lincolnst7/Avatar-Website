@@ -2678,7 +2678,7 @@
   {
     "Name": "Ran",
     "Gender": "Unknown",
-    "Species": "Dragon",
+    "Species": "Animal",
     "Place of Origin": "Fire Nation",
     "Bending type": [
       "Firebender"
@@ -2699,7 +2699,7 @@
   {
     "Name": "Shaw",
     "Gender": "Unknown",
-    "Species": "Dragon",
+    "Species": "Animal",
     "Place of Origin": "Fire Nation",
     "Bending type": [
       "Firebender"
@@ -3280,7 +3280,7 @@
     "Gender": "Male",
     "Species": "Human",
     "Place of Origin": "Northern Water Tribe",
-    "Bending type": "None",
+    "Bending type": "Waterbender",
     "Special Skills": [
       "Espionage",
       "Street Smarts"
