@@ -259,7 +259,12 @@ function displayGuess(character, results) {
             // For the leftmost cell (Name), add image above name
             if (colIndex === 0) {
                 const img = document.createElement('img');
-                img.src = character.Image;
+                // Prepend images folder path if not already present
+                let imgSrc = character.Image || '';
+                if (imgSrc && !imgSrc.startsWith('/Avatar-Website/images/')) {
+                    imgSrc = '/Avatar-Website/images/' + imgSrc.replace(/^\/+/, '');
+                }
+                img.src = imgSrc;
                 img.alt = character.Name;
                 img.style.display = 'block';
                 img.style.margin = '0 auto 4px auto';
