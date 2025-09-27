@@ -258,18 +258,30 @@ function displayGuess(character, results) {
             cell.className = `guess-cell ${result}`;
             // For the leftmost cell (Name), add image above name
             if (colIndex === 0) {
+                cell.style.display = 'flex';
+                cell.style.flexDirection = 'column';
+                cell.style.alignItems = 'center';
+                cell.style.justifyContent = 'center';
+                cell.style.height = '100%';
+                cell.style.padding = '0';
                 const img = document.createElement('img');
                 img.src = character.Image;
                 img.alt = character.Name;
                 img.style.display = 'block';
                 img.style.margin = '0 auto 4px auto';
-                img.style.width = '38px';
-                img.style.height = '38px';
+                img.style.width = '70%';
+                img.style.height = '70%';
                 img.style.objectFit = 'cover';
                 img.style.borderRadius = '6px';
-                cell.appendChild(img);
+                img.style.flex = '0 0 auto';
                 const nameDiv = document.createElement('div');
                 nameDiv.textContent = character[key];
+                nameDiv.style.fontSize = '0.85em';
+                nameDiv.style.marginTop = '4px';
+                nameDiv.style.textAlign = 'center';
+                nameDiv.style.width = '100%';
+                nameDiv.style.flex = '0 0 auto';
+                cell.appendChild(img);
                 cell.appendChild(nameDiv);
             } else {
                 cell.textContent = Array.isArray(character[key]) ? 
