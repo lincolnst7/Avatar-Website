@@ -251,16 +251,34 @@ function displayGuess(character, results) {
     const row = document.createElement('div');
     row.className = 'guess-row';
 
+    let colIndex = 0;
     Object.entries(results).forEach(([key, result], index) => {
         if (key !== 'Image') {  // Skip the Image column
             const cell = document.createElement('div');
             cell.className = `guess-cell ${result}`;
-            cell.textContent = Array.isArray(character[key]) ? 
-                character[key].join(', ') : character[key];
-            
+            // For the leftmost cell (Name), add image above name
+            if (colIndex === 0) {
+                const img = document.createElement('img');
+                img.src = character.Image;
+                img.alt = character.Name;
+                img.style.display = 'block';
+                img.style.margin = '0 auto 4px auto';
+                img.style.width = '38px';
+                img.style.height = '38px';
+                img.style.objectFit = 'cover';
+                img.style.borderRadius = '6px';
+                cell.appendChild(img);
+                const nameDiv = document.createElement('div');
+                nameDiv.textContent = character[key];
+                cell.appendChild(nameDiv);
+            } else {
+                cell.textContent = Array.isArray(character[key]) ? 
+                    character[key].join(', ') : character[key];
+            }
             // Add delay for fade-in animation
             setTimeout(() => cell.style.opacity = 1, index * 100);
             row.appendChild(cell);
+            colIndex++;
         }
     });
 
