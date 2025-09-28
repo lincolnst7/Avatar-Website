@@ -121,8 +121,13 @@ function startGame() {
         instructions.style.display = 'block';
     }
 
-    // Add column headers if they don't exist
+    // Add column headers and table wrapper if they don't exist
     if (!document.querySelector('.column-headers')) {
+        // Create a wrapper for both headers and rows
+        const tableWrapper = document.createElement('div');
+        tableWrapper.className = 'table-scroll-wrapper';
+        
+        // Create headers
         const headers = document.createElement('div');
         headers.className = 'column-headers';
         const headerNames = ['Name', 'Gender', 'Species', 'Origin', 'Bending', 'Skills', 'Affiliation', 'Appearances'];
@@ -132,7 +137,16 @@ function startGame() {
             header.textContent = name;
             headers.appendChild(header);
         });
-        gameArea.insertBefore(headers, guessRows);
+        
+        // Add headers to wrapper
+        tableWrapper.appendChild(headers);
+        
+        // Move guess rows into wrapper
+        guessRows.parentNode.removeChild(guessRows);
+        tableWrapper.appendChild(guessRows);
+        
+        // Insert wrapper into game area
+        gameArea.appendChild(tableWrapper);
     }
 
     // Move checkboxes back to settings if they were in game complete

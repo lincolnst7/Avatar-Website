@@ -79,27 +79,27 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 300px;
-    max-height: 300px;
-    padding: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 1.6;
+    padding: 2.5%;
     border-radius: 8px;
     margin: 0 auto 1.5rem auto;
     text-align: center;
-    max-width: 600px;
     line-height: 0.9;
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1%;
 }
 
 /* Style for the top and bottom text */
 .instructions-title {
     color: black;
-    font-size: 1.4rem;
-    margin: 0;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    margin: 0 0 clamp(0.5rem, 1.5vw, 0.8rem) 0;
     font-weight: bold;
     font-family: "SpiritITC", Arial, sans-serif;
 }
@@ -108,20 +108,16 @@
     color: black;
     margin: 0;
     max-width: 90%;
-    padding: 0 0.5rem;
+    padding: 0 1%;
     font-family: "Herculanum", Arial, sans-serif;
-}
-
-.game-instructions > p:first-child {
-    font-size: 0.95rem;
-    margin-bottom: 0.5rem;
+    font-size: clamp(0.8rem, 2.2vw, 1.1rem);
 }
 
 .game-instructions > p:last-child {
     font-family: "Herculanum", Arial, sans-serif;
     font-style: normal;
-    font-size: 1.1rem;
-    margin-top: -0.3rem;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    margin-top: clamp(1rem, 3.5vw, 1.4rem);
 }
 
 .game-instructions br {
@@ -134,26 +130,27 @@
 .instruction-boxes {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    margin: 0.3rem 0;
+    gap: clamp(0.3rem, 1vw, 0.5rem);
+    margin: clamp(1rem, 3.5vw, 1.4rem) 0;
     width: 100%;
+    max-width: 85%;
 }
 
 .instruction-box {
-    flex: 1;
-    max-width: 85px;
-    padding: 0.5rem;
-    border-radius: 6px;
+    width: clamp(60px, 14vw, 85px);
+    height: clamp(60px, 14vw, 85px);
+    padding: clamp(0.3rem, 1vw, 0.5rem);
+    border-radius: clamp(4px, 1vw, 6px);
     color: white;
-    font-size: 0.8rem;
+    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
     line-height: 1.1;
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 1;
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     font-family: "LockeRegular", Arial, sans-serif;
+    flex-shrink: 0;
 }
 
 .instruction-box.green {
@@ -289,7 +286,8 @@
 }
 
 #characterInput {
-    width: 900px;
+    width: min(900px, 90vw);
+    max-width: 900px;
     padding: 0.8rem;
     font-size: 1rem;
     border: 2px solid #ddd;
@@ -305,7 +303,8 @@
     z-index: 99;
     top: 100%;
     left: 50%;
-    width: 900px;
+    width: min(900px, 90vw);
+    max-width: 900px;
     transform: translateX(-50%);
     background-color: white;
     border-radius: 0 0 8px 8px;
@@ -363,17 +362,26 @@
 } */
 
 .give-up-button {
-    background-color: #ff4444;
-    color: white;
+    background-image: url("../images/give_up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: #c94a40;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    padding: 1rem 2rem;
+    border-radius: 6px;
     cursor: pointer;
     font-family: 'SpiritITC', Arial, sans-serif !important;
+    min-width: 120px;
+    min-height: 50px;
+    font-size: 1.1rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    transition: transform 0.2s ease;
 }
 
 .give-up-button:hover {
-    background-color: #cc0000;
+    transform: scale(1.1);
 }
 
 /* Guess rows styles */
@@ -381,6 +389,34 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+/* Table scroll wrapper for headers and rows */
+.table-scroll-wrapper {
+    width: 100%;
+}
+
+/* Horizontal scroll for the entire table on small screens */
+@media (max-width: 1200px) {
+    .table-scroll-wrapper {
+        overflow-x: auto;
+        overflow-y: visible;
+        padding-bottom: 0.5rem;
+    }
+    
+    .column-headers,
+    .guess-rows,
+    .guess-row {
+        min-width: 1200px;
+        flex-shrink: 0;
+    }
+}
+
+/* No scroll on larger screens */
+@media (min-width: 1201px) {
+    .table-scroll-wrapper {
+        overflow-x: visible;
+    }
 }
 
 .guess-container {
