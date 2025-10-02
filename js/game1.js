@@ -215,12 +215,28 @@ characterInput.addEventListener('keydown', (e) => {
     const suggestions = autoComplete.children;
     if (suggestions.length === 0) return;
 
-    if (e.key === 'Tab') {
+    if (e.key === 'Tab' || e.key === 'ArrowDown') {
         e.preventDefault();
         if (currentSuggestionIndex < suggestions.length - 1) {
             currentSuggestionIndex++;
         } else {
             currentSuggestionIndex = 0;
+        }
+        
+        Array.from(suggestions).forEach((suggestion, index) => {
+            if (index === currentSuggestionIndex) {
+                suggestion.classList.add('selected');
+                suggestion.scrollIntoView({ block: 'nearest' });
+            } else {
+                suggestion.classList.remove('selected');
+            }
+        });
+    } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (currentSuggestionIndex > 0) {
+            currentSuggestionIndex--;
+        } else {
+            currentSuggestionIndex = suggestions.length - 1;
         }
         
         Array.from(suggestions).forEach((suggestion, index) => {
@@ -308,11 +324,45 @@ function checkGuess(guess) {
             results[key] = intersection.length > 0 ? 
                 (intersection.length === guess[key].length && intersection.length === targetCharacter[key].length ? 'correct' : 'partial')
                 : 'incorrect';
+        } else if (key === 'Species') {
+            // Handle species with partial matching
+            const guessSpecies = Array.isArray(guess[key]) ? guess[key] : [guess[key]];
+            const targetSpecies = Array.isArray(targetCharacter[key]) ? targetCharacter[key] : [targetCharacter[key]];
+            
+            if (guessSpecies.length === targetSpecies.length && 
+                guessSpecies.every(species => targetSpecies.includes(species))) {
+                results[key] = 'correct';
+            } else if (guessSpecies.some(species => targetSpecies.includes(species))) {
+                results[key] = 'partial';
+            } else {
+                results[key] = 'incorrect';
+            }
+        } else if (key === 'Special Skills') {
+            // Handle special skills with partial matching
+            const guessSkills = Array.isArray(guess[key]) ? guess[key] : [guess[key]];
+            const targetSkills = Array.isArray(targetCharacter[key]) ? targetCharacter[key] : [targetCharacter[key]];
+            
+            if (guessSkills.length === targetSkills.length && 
+                guessSkills.every(skill => targetSkills.includes(skill))) {
+                results[key] = 'correct';
+            } else if (guessSkills.some(skill => targetSkills.includes(skill))) {
+                results[key] = 'partial';
+            } else {
+                results[key] = 'incorrect';
+            }
         } else if (Array.isArray(guess[key])) {
-            // Handle other array properties
-            const match = guess[key].every(item => targetCharacter[key].includes(item)) &&
-                         targetCharacter[key].every(item => guess[key].includes(item));
-            results[key] = match ? 'correct' : 'incorrect';
+            // Handle other array properties with partial matching
+            const guessArray = Array.isArray(guess[key]) ? guess[key] : [guess[key]];
+            const targetArray = Array.isArray(targetCharacter[key]) ? targetCharacter[key] : [targetCharacter[key]];
+            
+            if (guessArray.length === targetArray.length && 
+                guessArray.every(item => targetArray.includes(item))) {
+                results[key] = 'correct';
+            } else if (guessArray.some(item => targetArray.includes(item))) {
+                results[key] = 'partial';
+            } else {
+                results[key] = 'incorrect';
+            }
         } else {
             // Handle simple properties
             results[key] = guess[key] === targetCharacter[key] ? 'correct' : 'incorrect';
@@ -427,19 +477,8 @@ function handleGuess(character) {
 
 function setupGameControls() {
     // Create game controls container if it doesn't exist
-    let gameControls = document.querySelector('.game-controls');
-    if (!gameControls) {
-        gameControls = document.createElement('div');
-        gameControls.className = 'game-controls';
-        gameArea.appendChild(gameControls);
-    }
-
-    // Add give up button
-    const giveUpButton = document.createElement('button');
-    giveUpButton.textContent = 'Give Up';
-    giveUpButton.className = 'give-up-button';
-    giveUpButton.onclick = handleGiveUp;
-    gameControls.appendChild(giveUpButton);
+    // Set up button event listeners
+    setupButtonListeners();
 }
 
 // Handle give up
@@ -528,6 +567,41 @@ async function initGame() {
   playButton.disabled = false;
 }
 initGame();
+
+// Setup button listeners for the new control buttons
+function setupButtonListeners() {
+    const howToPlayButton = document.getElementById('howToPlayButton');
+    const hintButton = document.getElementById('hintButton');
+    const giveUpButton = document.getElementById('giveUpButton');
+    const instructionsOverlay = document.getElementById('instructionsOverlay');
+    const closeInstructions = document.getElementById('closeInstructions');
+
+    // How to Play button - show overlay
+    howToPlayButton.addEventListener('click', () => {
+        instructionsOverlay.style.display = 'flex';
+    });
+
+    // Close instructions - hide overlay
+    closeInstructions.addEventListener('click', () => {
+        instructionsOverlay.style.display = 'none';
+    });
+
+    // Close overlay when clicking outside content
+    instructionsOverlay.addEventListener('click', (e) => {
+        if (e.target === instructionsOverlay) {
+            instructionsOverlay.style.display = 'none';
+        }
+    });
+
+    // Hint button - placeholder for now
+    hintButton.addEventListener('click', () => {
+        // TODO: Add hint functionality later
+        console.log('Hint button clicked - functionality to be added');
+    });
+
+    // Give up button
+    giveUpButton.addEventListener('click', handleGiveUp);
+}
 
 // Event listeners
 playButton.addEventListener('click', startGame);

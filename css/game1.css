@@ -236,8 +236,8 @@
     overflow: hidden;
 }
 
-/* Hide give up button when game is over */
-.game-won .give-up-button {
+/* Hide control buttons when game is over */
+.game-won .game-controls {
     display: none;
 }
 
@@ -310,6 +310,16 @@
     border-radius: 0 0 8px 8px;
     max-height: 200px;
     overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Ensure autocomplete stays within viewport on very small screens */
+@media (max-width: 480px) {
+    .autocomplete-items {
+        width: 95vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .autocomplete-items div {
@@ -382,6 +392,79 @@
 
 .give-up-button:hover {
     transform: scale(1.1);
+}
+
+/* Control buttons (How to Play and Hint) */
+.control-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'SpiritITC', Arial, sans-serif !important;
+    min-width: 120px;
+    min-height: 50px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.control-button:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+/* Instructions Overlay */
+.instructions-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.close-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
+/* Game instructions styling when in overlay - sized to fit properly */
+.instructions-overlay .game-instructions {
+    max-width: 650px;
+    width: 80vw;
 }
 
 /* Guess rows styles */
