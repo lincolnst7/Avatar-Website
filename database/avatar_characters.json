@@ -3359,7 +3359,7 @@
       "Avatar: The Last Airbender",
       "Avatar Comics"
     ],
-    "Image": "images/characters/Cabbage_Merchant_(Cai).jpg"
+    "Image": "images/characters/Cabbage_Merchant.jpg"
   },
   {
     "Name": "Joo Dee",
@@ -3673,7 +3673,7 @@
     "Appearances": [
       "Roku Novels"
     ],
-    "Image": "images/characters/Sister_Disha.jpg"
+    "Image": ""
   },
   {
     "Name": "Malaya",
@@ -3692,7 +3692,7 @@
     "Appearances": [
       "Roku Novels"
     ],
-    "Image": "images/characters/Malaya.jpg"
+    "Image": ""
   },
   {
     "Name": "Amihan",
@@ -3711,7 +3711,7 @@
     "Appearances": [
       "Roku Novels"
     ],
-    "Image": "images/characters/Amihan.jpg"
+    "Image": ""
   },
   {
     "Name": "Ulo",
@@ -3728,7 +3728,7 @@
     "Appearances": [
       "Roku Novels"
     ],
-    "Image": "images/characters/Ulo.jpg"
+    "Image": ""
   },
   {
     "Name": "Hawky",
@@ -3746,23 +3746,6 @@
       "Avatar: the Last Airbender"
     ],
     "Image": "images/characters/Hawky.jpg"
-  },
-  {
-    "Name": "Yon Rha",
-    "Gender": "Male",
-    "Species": "Human",
-    "Place of Origin": "Fire Nation",
-    "Bending type": "Firebender",
-    "Special Skills": [
-      "None"
-    ],
-    "Affiliation/Group": [
-      "Fire Nation Military"
-    ],
-    "Appearances": [
-      "Avatar: the Last Airbender"
-    ],
-    "Image": "images/characters/Yon_Rha.jpg"
   }
 
 ]
