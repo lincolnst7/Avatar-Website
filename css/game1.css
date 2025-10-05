@@ -68,7 +68,8 @@
 }
 
 .game-logo {
-    max-width: 400px;
+    max-width: min(400px, 90vw);
+    width: 100%;
     height: auto;
     margin-bottom: 1rem;
 }
@@ -313,10 +314,16 @@
     box-sizing: border-box;
 }
 
-/* Ensure autocomplete stays within viewport on very small screens */
-@media (max-width: 480px) {
+/* Mobile responsive sizing for input and autocomplete */
+@media (max-width: 600px) {
+    #characterInput {
+        width: 85vw;
+        max-width: none;
+    }
+    
     .autocomplete-items {
-        width: 95vw;
+        width: 85vw;
+        max-width: none;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -342,6 +349,44 @@
     gap: 1rem;
     justify-content: center;
     margin: 1rem 0;
+}
+
+/* Stack buttons vertically on narrow screens */
+@media (max-width: 600px) {
+    .game-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0;
+    }
+    
+    .game-intro {
+        margin-bottom: 1rem;
+    }
+    
+    .game-logo {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Scale down headers and cells for mobile */
+    .column-headers {
+        min-height: 30px;
+        padding: 0.1rem 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .column-header {
+        height: 35px;
+        padding: 0.3rem;
+        font-size: clamp(0.7rem, 1.8vw, 1rem);
+    }
+    
+    .column-header,
+    .guess-cell {
+        padding: 0.3rem;
+        font-size: clamp(0.6rem, 1.3vw, 0.8rem);
+        min-width: 70px;
+    }
 }
 
 .play-button, .replay-button {
@@ -383,7 +428,7 @@
     border-radius: 6px;
     cursor: pointer;
     font-family: 'SpiritITC', Arial, sans-serif !important;
-    min-width: 120px;
+    min-width: 160px;
     min-height: 50px;
     font-size: 1.1rem;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
@@ -396,23 +441,26 @@
 
 /* Control buttons (How to Play and Hint) */
 .control-button {
-    background-color: #4caf50;
-    color: white;
+    background-image: url("../images/give_up.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: #c94a40;
     border: none;
     padding: 1rem 2rem;
     border-radius: 6px;
     cursor: pointer;
     font-family: 'SpiritITC', Arial, sans-serif !important;
-    min-width: 120px;
+    min-width: 160px;
     min-height: 50px;
     font-size: 1.1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
     transition: transform 0.2s ease;
 }
 
 .control-button:hover {
     transform: scale(1.1);
-    background-color: #45a049;
 }
 
 /* Instructions Overlay */
@@ -472,6 +520,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    padding: 0 2rem;
 }
 
 /* Table scroll wrapper for headers and rows */
@@ -521,13 +570,19 @@
 
 .column-headers {
     margin-bottom: 1.5rem;
+    background-image: url("../images/column_paint_header.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    padding: 0.25rem 2rem;
+    min-height: 60px;
 }
 
 .column-header,
 .guess-cell {
     flex: 1;
     min-width: 80px;
-    aspect-ratio: 1;
     padding: 0.5rem;
     display: flex;
     align-items: center;
@@ -540,11 +595,17 @@
 
 .column-header {
     aspect-ratio: auto;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 1);
+    height: 50px;
+    background-color: transparent;
     color: white;
     font-weight: bold;
     font-family: "SpiritITC", Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+.guess-cell {
+    aspect-ratio: 1;
 }
 
 .guess-cell {

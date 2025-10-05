@@ -149,6 +149,12 @@ function startGame() {
         gameArea.appendChild(tableWrapper);
     }
 
+    // Hide column headers initially until first guess
+    const columnHeaders = document.querySelector('.column-headers');
+    if (columnHeaders) {
+        columnHeaders.style.display = 'none';
+    }
+
     // Move checkboxes back to settings if they were in game complete
     const checkboxContainer = document.querySelector('.checkbox-container');
     if (checkboxContainer.parentElement === gameComplete) {
@@ -426,6 +432,12 @@ function displayGuess(character, results) {
         }
     });
 
+    // Show column headers on first guess
+    const columnHeaders = document.querySelector('.column-headers');
+    if (columnHeaders && columnHeaders.style.display === 'none') {
+        columnHeaders.style.display = 'flex';
+    }
+
     // Insert at the beginning of guessRows
     guessRows.insertBefore(row, guessRows.firstChild);
     row.classList.add('show');
@@ -485,6 +497,17 @@ function setupGameControls() {
 function handleGiveUp() {
     if (!gameActive) return;
     gameActive = false;
+    
+    // Show column headers if not already visible
+    const columnHeaders = document.querySelector('.column-headers');
+    if (columnHeaders && columnHeaders.style.display === 'none') {
+        columnHeaders.style.display = 'flex';
+    }
+    
+    // Display the correct character as a guess row so player can see the answer
+    const correctResults = checkGuess(targetCharacter);
+    displayGuess(targetCharacter, correctResults);
+    
     gameComplete.style.display = 'block';
     gameComplete.style.marginBottom = '1rem';
     successMessage.textContent = `The character was ${targetCharacter.Name}!`;
