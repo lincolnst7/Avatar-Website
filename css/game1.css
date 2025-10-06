@@ -387,6 +387,21 @@
         font-size: clamp(0.6rem, 1.3vw, 0.8rem);
         min-width: 70px;
     }
+    
+    /* Scale down table wrapper proportionally for mobile */
+    .table-scroll-wrapper {
+        transform: scale(0.85);
+        transform-origin: top center;
+    }
+    
+    /* Scale down game controls buttons for mobile */
+    .control-button,
+    .give-up-button {
+        min-width: 100px;
+        min-height: 30px;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
 }
 
 .play-button, .replay-button {
@@ -417,7 +432,7 @@
 } */
 
 .give-up-button {
-    background-image: url("../images/give_up.png");
+    background-image: url("../images/button.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -432,16 +447,18 @@
     min-height: 50px;
     font-size: 1.1rem;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .give-up-button:hover {
     transform: scale(1.1);
+    background-image: url("../images/give_up.png");
+    color: white;
 }
 
 /* Control buttons (How to Play and Hint) */
 .control-button {
-    background-image: url("../images/give_up.png");
+    background-image: url("../images/button.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -456,12 +473,34 @@
     min-height: 50px;
     font-size: 1.1rem;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .control-button:hover {
     transform: scale(1.1);
+    color: white;
 }
+
+/* Individual button colors */
+#howToPlayButton {
+    color: #4a7bc8;
+}
+
+#howToPlayButton:hover {
+    background-image: url("../images/how_to_play.png");
+    color: white;
+}
+
+#hintButton {
+    color: #4caf50;
+}
+
+#hintButton:hover {
+    background-image: url("../images/hint.png");
+    color: white;
+}
+
+/* Give up button keeps red color (#c94a40) from .give-up-button class */
 
 /* Instructions Overlay */
 .instructions-overlay {
