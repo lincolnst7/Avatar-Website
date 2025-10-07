@@ -135,6 +135,7 @@ function startGame() {
             const header = document.createElement('div');
             header.className = 'column-header';
             header.textContent = name;
+            header.addEventListener('click', () => showColumnInfo(name));
             headers.appendChild(header);
         });
         
@@ -625,6 +626,82 @@ function setupButtonListeners() {
     // Give up button
     giveUpButton.addEventListener('click', handleGiveUp);
 }
+
+// Column info functionality
+function getColumnValues(columnName) {
+    const fieldMapping = {
+        'Name': 'Name',
+        'Gender': 'Gender', 
+        'Species': 'Species',
+        'Origin': 'Place of Origin',
+        'Bending': 'Bending type',
+        'Skills': 'Special Skills',
+        'Affiliation': 'Affiliation/Group',
+        'Appearances': 'Appearances'
+    };
+    
+    const fieldName = fieldMapping[columnName];
+    const valueCounts = {};
+    
+    // Count occurrences of each value
+    characters.forEach(char => {
+        const value = char[fieldName];
+        if (Array.isArray(value)) {
+            value.forEach(v => {
+                valueCounts[v] = (valueCounts[v] || 0) + 1;
+            });
+        } else {
+            valueCounts[value] = (valueCounts[value] || 0) + 1;
+        }
+    });
+    
+    // Convert to array of objects and sort
+    if (columnName === 'Name') {
+        // Alphabetical sorting for Name column
+        return Object.keys(valueCounts).sort();
+    } else {
+        // Frequency-based sorting for all other columns (descending by count)
+        return Object.entries(valueCounts)
+            .sort((a, b) => b[1] - a[1])
+            .map(entry => entry[0]);
+    }
+}
+
+function showColumnInfo(columnName) {
+    const overlay = document.getElementById('columnInfoOverlay');
+    const title = document.getElementById('columnInfoTitle');
+    const list = document.getElementById('columnInfoList');
+    
+    // Set title
+    title.textContent = `Possible ${columnName}:`;
+    
+    // Clear existing list
+    list.innerHTML = '';
+    
+    // Get values and populate list
+    const values = getColumnValues(columnName);
+    values.forEach(value => {
+        const listItem = document.createElement('li');
+        listItem.textContent = value;
+        list.appendChild(listItem);
+    });
+    
+    // Show overlay
+    overlay.style.display = 'flex';
+}
+
+function hideColumnInfo() {
+    const overlay = document.getElementById('columnInfoOverlay');
+    overlay.style.display = 'none';
+}
+
+// Setup column info overlay event listeners
+document.getElementById('closeColumnInfo').addEventListener('click', hideColumnInfo);
+document.getElementById('columnInfoOverlay').addEventListener('click', (e) => {
+    if (e.target.id === 'columnInfoOverlay') {
+        hideColumnInfo();
+    }
+});
 
 // Event listeners
 playButton.addEventListener('click', startGame);

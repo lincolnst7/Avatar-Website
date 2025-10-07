@@ -564,6 +564,83 @@ body {
     width: 80vw;
 }
 
+/* Column info overlay styles */
+.column-info-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-info-content {
+    position: relative;
+    max-width: 500px;
+    width: 85vw;
+    max-height: 80vh;
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.column-info-title {
+    font-family: "SpiritITC", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.column-info-list {
+    font-family: "LockeRegular", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.column-info-list li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.column-info-list li:last-child {
+    border-bottom: none;
+}
+
+.column-info-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.column-info-close:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
 /* Guess rows styles */
 .guess-rows {
     display: flex;
@@ -651,6 +728,12 @@ body {
     font-family: "SpiritITC", Arial, sans-serif;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     font-size: clamp(0.9rem, 2vw, 1.2rem);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.column-header:hover {
+    color: #ffd700;
 }
 
 .guess-cell {
