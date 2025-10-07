@@ -1798,7 +1798,7 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Freedom Fighters"
+      "Freedom Fighters", "Invasion Fighters"
     ],
     "Appearances": [
       "Avatar: The Last Airbender",
@@ -1860,7 +1860,7 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Freedom Fighters"
+      "Freedom Fighters", "Invasion Fighters"
     ],
     "Appearances": [
       "Avatar: The Last Airbender",
@@ -2787,7 +2787,7 @@
     ],
     "Appearances": [
       "Avatar: The Last Airbender",
-      "Avatar Comics"
+      "Avatar Comics", "The Legend of Korra"
     ],
     "Image": "images/characters/Admiral_Zhao.jpg"
   },
@@ -3315,7 +3315,7 @@
     "Image": "images/characters/Doc_Xu_Bushi.jpg"
   },
   {
-    "Name": "Painted Lady",
+    "Name": "The Painted Lady",
     "Gender": "Female",
     "Species": [
       "Spirit"
@@ -4114,7 +4114,7 @@
     "Image": ""
   },
   {
-    "Name": "Ulo",
+    "Name": "Chief Ulo",
     "Gender": "Male",
     "Species": [
       "Human"
@@ -4150,5 +4150,90 @@
       "Avatar: the Last Airbender"
     ],
     "Image": "images/characters/Hawky.jpg"
+  },
+  {
+    "Name": "Meng",
+    "Gender": "Female",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": "None",
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "None"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
+    "Image": "images/characters/Meng.jpg"
+  },
+  {
+    "Name": "Noren/Ikem",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Fire Nation",
+    "Bending type": "None",
+    "Special Skills": [
+      "Swordfighting"
+    ],
+    "Affiliation/Group": [
+      "Fire Nation Royal Family"
+    ],
+    "Appearances": [
+      "Avatar Comics"
+    ],
+    "Image": "images/characters/Noren.jpg"
+  },
+  {
+    "Name": "Mother of Faces",
+    "Gender": "Female",
+    "Species": "Spirit",
+    "Place of Origin": "Spirit World",
+    "Bending type": "None",
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Spirits"
+    ],
+    "Appearances": [
+      "Avatar Comics"
+    ],
+    "Image": "images/characters/Mother_of_Faces.jpg"
+  },
+  {
+    "Name": "Guru Pathik",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Unknown",
+    "Bending type": "None",
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Spiritual Mentor"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
+    "Image": "images/characters/Guru_Pathik.jpg"
+  },
+  {
+    "Name": "Professor Zei",
+    "Gender": "Male",
+    "Species": "Human",
+    "Place of Origin": "Earth Kingdom",
+    "Bending type": "None",
+    "Special Skills": [
+      "None"
+    ],
+    "Affiliation/Group": [
+      "Ba Sing Se"
+    ],
+    "Appearances": [
+      "Avatar: The Last Airbender"
+    ],
+    "Image": "images/characters/Professor_Zei.jpg"
   }
 ]
