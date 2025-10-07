@@ -14,6 +14,98 @@ const gameComplete = document.getElementById('gameComplete');
 const successMessage = document.getElementById('successMessage');
 const playButton = document.getElementById('playButton');
 const replayButton = document.getElementById('replayButton');
+const settingsButton = document.getElementById('settingsButton');
+const settingsModal = document.getElementById('settingsModal');
+const settingsClose = document.querySelector('.settings-close');
+
+// Settings Modal Functions
+function openSettingsModal() {
+    settingsModal.style.display = 'flex';
+}
+
+function closeSettingsModal() {
+    settingsModal.style.display = 'none';
+}
+
+// Settings Modal Event Listeners
+settingsButton.addEventListener('click', openSettingsModal);
+settingsClose.addEventListener('click', closeSettingsModal);
+
+// Game complete settings button
+const gameCompleteSettingsButton = document.getElementById('gameCompleteSettingsButton');
+if (gameCompleteSettingsButton) {
+    gameCompleteSettingsButton.addEventListener('click', openSettingsModal);
+}
+
+// Close modal when clicking outside the content
+settingsModal.addEventListener('click', function(event) {
+    if (event.target === settingsModal) {
+        closeSettingsModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && settingsModal.style.display === 'flex') {
+        closeSettingsModal();
+    }
+});
+
+// Mobile keyboard handling
+if (window.innerWidth <= 600) {
+    const characterInput = document.getElementById('characterInput');
+    const gameContainer = document.querySelector('.game-container');
+    
+    function showKeyboard() {
+        document.body.classList.add('input-focused');
+        gameContainer.classList.add('input-focused');
+    }
+    
+    function hideKeyboard() {
+        document.body.classList.remove('input-focused');
+        gameContainer.classList.remove('input-focused');
+        characterInput.blur();
+    }
+    
+    let isSelectingAutocomplete = false;
+    
+    characterInput.addEventListener('focus', showKeyboard);
+    characterInput.addEventListener('blur', function(event) {
+        // Delay blur handling to allow autocomplete selection
+        setTimeout(() => {
+            if (!isSelectingAutocomplete) {
+                document.body.classList.remove('input-focused');
+                gameContainer.classList.remove('input-focused');
+            }
+        }, 150);
+    });
+    
+    // Prevent keyboard dismissal when tapping autocomplete
+    const autoComplete = document.getElementById('autoComplete');
+    if (autoComplete) {
+        autoComplete.addEventListener('mousedown', function() {
+            isSelectingAutocomplete = true;
+        });
+        
+        autoComplete.addEventListener('touchstart', function() {
+            isSelectingAutocomplete = true;
+        });
+        
+        // Reset flag after selection
+        autoComplete.addEventListener('click', function() {
+            setTimeout(() => {
+                isSelectingAutocomplete = false;
+            }, 200);
+        });
+    }
+    
+    // Dismiss keyboard when guess is submitted
+    characterInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            setTimeout(hideKeyboard, 100); // Small delay to allow guess processing
+        }
+    });
+}
 
 // Function to check if scroll hint should be visible
 function updateScrollHintVisibility() {
@@ -168,11 +260,11 @@ function startGame() {
         // Insert wrapper into game area
         gameArea.appendChild(tableWrapper);
         
-        // Move scroll hint after table wrapper
+        // Move scroll hint immediately after table wrapper
         const scrollHint = document.getElementById('scrollHint');
         if (scrollHint) {
             scrollHint.parentNode.removeChild(scrollHint);
-            gameArea.appendChild(scrollHint);
+            gameArea.insertBefore(scrollHint, tableWrapper.nextSibling);
         }
     }
 
@@ -182,11 +274,7 @@ function startGame() {
         columnHeaders.style.display = 'none';
     }
 
-    // Move checkboxes back to settings if they were in game complete
-    const checkboxContainer = document.querySelector('.checkbox-container');
-    if (checkboxContainer.parentElement === gameComplete) {
-        gameSettings.appendChild(checkboxContainer);
-    }
+    // Checkboxes are now in the settings modal
     
     // Initial check for scroll hint visibility
     setTimeout(updateScrollHintVisibility, 100); // Use timeout to ensure DOM is fully rendered
@@ -326,7 +414,24 @@ function selectSuggestion(character) {
     characterInput.value = character.Name;
     autoComplete.innerHTML = '';
     currentSuggestionIndex = -1;
+    
     handleGuess(character);
+    
+    // Different behavior for mobile vs desktop
+    if (window.innerWidth <= 600) {
+        // Mobile: dismiss keyboard after selection
+        setTimeout(() => {
+            document.body.classList.remove('input-focused');
+            document.querySelector('.game-container').classList.remove('input-focused');
+            characterInput.blur();
+        }, 100);
+    } else {
+        // Desktop: maintain focus and clear input for next guess
+        setTimeout(() => {
+            characterInput.focus();
+            characterInput.value = '';
+        }, 50);
+    }
 }
 
 // Check guess against target character
@@ -526,9 +631,7 @@ function handleGuess(character) {
         const scrollHint = document.getElementById('scrollHint');
         if (scrollHint) scrollHint.style.display = 'none';
         
-        // Move checkboxes to game complete area
-        const checkboxContainer = document.querySelector('.checkbox-container');
-        gameComplete.appendChild(checkboxContainer);
+        // Settings button is now part of the game complete HTML
         
         // Scroll to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -585,9 +688,7 @@ function handleGiveUp() {
     const scrollHint = document.getElementById('scrollHint');
     if (scrollHint) scrollHint.style.display = 'none';
     
-    // Move checkboxes to game complete area
-    const checkboxContainer = document.querySelector('.checkbox-container');
-    gameComplete.appendChild(checkboxContainer);
+    // Settings button is now part of the game complete HTML
     
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -769,6 +870,14 @@ characterInput.addEventListener('keypress', (e) => {
             .find(char => char.Name.toLowerCase() === characterInput.value.toLowerCase());
         if (character) {
             handleGuess(character);
+            
+            // Keep focus on desktop, only dismiss keyboard on mobile
+            if (window.innerWidth > 600) {
+                setTimeout(() => {
+                    characterInput.focus();
+                    characterInput.value = '';
+                }, 50);
+            }
         }
     }
 });

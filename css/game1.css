@@ -5,6 +5,8 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Fallback color that matches the background */
 }
 
 /* Game container styles */
@@ -74,6 +76,9 @@ body {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 0.5rem;
+    display: inline-block;
+    width: 100%;
+    line-height: 0;
 }
 
 .game-logo {
@@ -105,8 +110,11 @@ body {
     color: white;
     font-family: "SpiritITC", Arial, sans-serif;
     font-size: 1.2rem;
-    margin: 0.2rem 0;
+    margin: -1rem 0 2rem 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 10;
+    order: -1; /* Ensure it appears right after the table */
 }
 
 /* Unified .game-instructions appearance in both game-settings and game-area */
@@ -356,6 +364,13 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        min-height: 100vh;
+        min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+        overflow-x: hidden;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
     
     #characterInput {
@@ -371,6 +386,36 @@ body {
         transform: translateX(-50%);
         top: 100%;
         z-index: 1000;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    
+    /* Prevent viewport changes when keyboard appears */
+    .game-container {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    /* Move all page content up when input is focused */
+    .game-container.input-focused {
+        transform: translateY(-20vh);
+        transition: transform 0.3s ease;
+        padding-bottom: 25vh;
+        min-height: 100vh;
+    }
+    
+    /* Ensure autocomplete has space on first guess when fewer elements are visible */
+    .game-container.input-focused .guess-input-container {
+        margin-bottom: 20vh;
+    }
+    
+    /* Ensure background stays fixed but allow scrolling */
+    html {
+        overflow-x: hidden;
+    }
+    
+    body.input-focused {
+        overflow-y: auto;
     }
 }
 
@@ -407,7 +452,7 @@ body {
             "giveup giveup";
         gap: 0.5rem;
         justify-content: center;
-        margin: 0.2rem 0 2rem 0;
+        margin: 0 0 2rem 0;
     }
     
     .control-button {
@@ -439,7 +484,7 @@ body {
     }
     
     .game-logo {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
     }
     
     /* Scale down headers and cells for mobile */
@@ -486,11 +531,12 @@ body {
     .game-won .checkbox-container {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
-        column-gap: 1.5rem;
+        column-gap: 1.5r;
         row-gap: 0.5rem;
-        max-width: 100%;
+        max-width: 75%;
         justify-items: center;
         flex-direction: initial;
+        margin: 0 auto;
     }
     
     .checkbox-group,
@@ -628,6 +674,33 @@ body {
 #hintButton:hover {
     background-image: url("../images/hint.png");
     color: white;
+}
+
+/* Settings button */
+.settings-button {
+    background-image: url("../images/settings.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'SpiritITC', Arial, sans-serif !important;
+    min-width: 160px;
+    min-height: 50px;
+    font-size: 1.1rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    transition: all 0.2s ease;
+    display: block;
+    margin: 1rem auto;
+}
+
+.settings-button:hover {
+    transform: scale(1.1);
+    color: #ffd700;
 }
 
 /* Give up button keeps red color (#c94a40) from .give-up-button class */
@@ -1077,4 +1150,89 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Settings Modal Overlay */
+.settings-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-modal-content {
+    background-image: url("../images/character_settings_screen.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 95%;
+    max-width: 950px;
+    min-height: 600px;
+    max-height: 1500px;
+    overflow-y: auto;
+    padding: 2rem;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.settings-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.settings-close:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
+.settings-title {
+    text-align: center;
+    color: #8B4513;
+    font-family: 'SpiritITC', Arial, sans-serif;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+/* Settings modal mobile adjustments */
+@media (max-width: 600px) {
+    .settings-modal-content {
+        background-image: url("../images/character_settings_screen_mobile.png");
+        width: 95%;
+        max-width: none;
+        padding: 1.5rem;
+    }
+    
+    .settings-close {
+        top: 10px;
+        right: 15px;
+        font-size: 1.8rem;
+    }
+    
+    .settings-title {
+        font-size: 1.3rem;
+    }
 }

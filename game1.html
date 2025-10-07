@@ -57,6 +57,81 @@
                 
                 <p>Use the hints to narrow down until you<br>guess the right character!</p>
             </div>
+            <!-- Settings button to open modal -->
+            <button id="settingsButton" class="settings-button">Settings</button>
+            <button id="playButton" class="play-button" disabled>Play</button>
+
+        </div>
+
+        <!-- Game area (hidden until play is clicked) -->
+        <div class="game-area" id="gameArea" style="display: none;">
+            <div class="game-controls">
+                <button id="howToPlayButton" class="control-button">How to Play</button>
+                <button id="hintButton" class="control-button">Hint</button>
+                <button id="giveUpButton" class="give-up-button">Give Up</button>
+            </div>
+            <div class="guess-input-container">
+                <input type="text" id="characterInput" placeholder="Enter character name...">
+                <div id="autoComplete" class="autocomplete-items"></div>
+            </div>
+            <div id="columnHint" class="column-hint" style="display: none;">
+                Click the column headers to see all possible values
+            </div>
+            <div id="guessRows" class="guess-rows"></div>
+            <div id="scrollHint" class="scroll-hint" style="display: none;">
+                Scroll →
+            </div>
+            <div id="gameComplete" class="game-complete" style="display: none;">
+                <div id="characterImageWrapper" class="character-image-wrapper">
+                    <img id="characterImage" class="character-image" alt="Character" style="display: none;">
+                </div>
+                <p id="successMessage"></p>
+                <button id="gameCompleteSettingsButton" class="settings-button">Settings</button>
+                <button id="replayButton" class="replay-button">Play Again</button>
+                
+            </div>
+        </div>
+
+        <!-- Instructions Overlay -->
+        <div id="instructionsOverlay" class="instructions-overlay" style="display: none;">
+            <div class="overlay-content">
+                <button id="closeInstructions" class="close-button">&times;</button>
+                <div class="game-instructions">
+                    <h2 class="instructions-title">HOW TO PLAY</h2>
+                    <p>Type a character's name into the box, and the<br>game will show you information about that character.</p>
+                    
+                    <div class="instruction-boxes">
+                        <div class="instruction-box green">
+                            Green means the info matches the hidden character.
+                        </div>
+                        <div class="instruction-box yellow">
+                            Yellow means it partially matches.
+                        </div>
+                        <div class="instruction-box red">
+                            Red means it doesn't match.
+                        </div>
+                    </div>
+                    
+                    <p>Use the hints to narrow down until you<br>guess the right character!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column Info Overlay -->
+        <div id="columnInfoOverlay" class="column-info-overlay">
+            <div class="column-info-content">
+                <button id="closeColumnInfo" class="column-info-close">&times;</button>
+                <h2 id="columnInfoTitle" class="column-info-title"></h2>
+                <ul id="columnInfoList" class="column-info-list"></ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Settings Modal Overlay -->
+    <div id="settingsModal" class="settings-modal" style="display: none;">
+        <div class="settings-modal-content">
+            <span class="settings-close">&times;</span>
+            <h2 class="settings-title">Character Settings</h2>
             <p class="checkbox-header">Include Characters from:</p>
             <div class="checkbox-container">
                 <div class="checkbox-group">
@@ -108,72 +183,8 @@
                     </div>
                 </div>
             </div>
-            <button id="playButton" class="play-button" disabled>Play</button>
-
         </div>
-
-        <!-- Game area (hidden until play is clicked) -->
-        <div class="game-area" id="gameArea" style="display: none;">
-            <div class="game-controls">
-                <button id="howToPlayButton" class="control-button">How to Play</button>
-                <button id="hintButton" class="control-button">Hint</button>
-                <button id="giveUpButton" class="give-up-button">Give Up</button>
-            </div>
-            <div class="guess-input-container">
-                <input type="text" id="characterInput" placeholder="Enter character name...">
-                <div id="autoComplete" class="autocomplete-items"></div>
-            </div>
-            <div id="columnHint" class="column-hint" style="display: none;">
-                Click the column headers to see all possible values
-            </div>
-            <div id="guessRows" class="guess-rows"></div>
-            <div id="scrollHint" class="scroll-hint" style="display: none;">
-                Scroll →
-            </div>
-            <div id="gameComplete" class="game-complete" style="display: none;">
-                <div id="characterImageWrapper" class="character-image-wrapper">
-                    <img id="characterImage" class="character-image" alt="Character" style="display: none;">
-                </div>
-                <p id="successMessage"></p>
-                <button id="replayButton" class="replay-button">Play Again</button>
-                
-            </div>
-        </div>
-
-        <!-- Instructions Overlay -->
-        <div id="instructionsOverlay" class="instructions-overlay" style="display: none;">
-            <div class="overlay-content">
-                <button id="closeInstructions" class="close-button">&times;</button>
-                <div class="game-instructions">
-                    <h2 class="instructions-title">HOW TO PLAY</h2>
-                    <p>Type a character's name into the box, and the<br>game will show you information about that character.</p>
-                    
-                    <div class="instruction-boxes">
-                        <div class="instruction-box green">
-                            Green means the info matches the hidden character.
-                        </div>
-                        <div class="instruction-box yellow">
-                            Yellow means it partially matches.
-                        </div>
-                        <div class="instruction-box red">
-                            Red means it doesn't match.
-                        </div>
-                    </div>
-                    
-                    <p>Use the hints to narrow down until you<br>guess the right character!</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Column Info Overlay -->
-        <div id="columnInfoOverlay" class="column-info-overlay">
-            <div class="column-info-content">
-                <button id="closeColumnInfo" class="column-info-close">&times;</button>
-                <h2 id="columnInfoTitle" class="column-info-title"></h2>
-                <ul id="columnInfoList" class="column-info-list"></ul>
-            </div>
-        </div>
-    </main>
+    </div>
 
     <script src="js/game1.js"></script>
 </body>
