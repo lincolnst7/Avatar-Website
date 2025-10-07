@@ -11,7 +11,7 @@ body {
 .game-container {
     max-width: 90vw;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.25rem;
 }
 
 @font-face {
@@ -72,15 +72,20 @@ body {
 /* Game intro styles */
 .game-intro {
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 2rem;
+    margin-top: 100px;
+    margin-bottom: 0.5rem;
 }
 
 .game-logo {
-    max-width: min(400px, 90vw);
+    max-width: min(500px, 90vw);
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Game area spacer to center input bar vertically */
+.game-area {
+    margin-top: 8vh;
 }
 
 /* Unified .game-instructions appearance in both game-settings and game-area */
@@ -92,9 +97,9 @@ body {
     width: 100%;
     max-width: 600px;
     aspect-ratio: 1.6;
-    padding: 2.5%;
+    padding: 0.5%;
     border-radius: 8px;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto 0.25rem auto;
     text-align: center;
     line-height: 0.9;
     font-size: clamp(0.8rem, 2vw, 1.2rem);
@@ -370,7 +375,7 @@ body {
     }
     
     .game-intro {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
     
     .game-logo {
@@ -696,13 +701,26 @@ body {
 
 .column-headers {
     margin-bottom: 1.5rem;
+    border-radius: 8px;
+    padding: 0.25rem 2rem;
+    min-height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.column-headers::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url("../images/column_paint_header.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 8px;
-    padding: 0.25rem 2rem;
-    min-height: 60px;
+    transform: rotate(0.5deg);
+    z-index: -1;
 }
 
 .column-header,
