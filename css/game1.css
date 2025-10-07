@@ -396,18 +396,7 @@ body {
         overflow-x: hidden;
     }
     
-    /* Move all page content up when input is focused */
-    .game-container.input-focused {
-        transform: translateY(-20vh);
-        transition: transform 0.3s ease;
-        padding-bottom: 25vh;
-        min-height: 100vh;
-    }
-    
-    /* Ensure autocomplete has space on first guess when fewer elements are visible */
-    .game-container.input-focused .guess-input-container {
-        margin-bottom: 20vh;
-    }
+    /* Mobile keyboard handling - no transforms needed as browser handles automatically */
     
     /* Ensure background stays fixed but allow scrolling */
     html {

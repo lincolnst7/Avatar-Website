@@ -51,34 +51,10 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// Mobile keyboard handling
+// Mobile keyboard handling - browser handles positioning automatically
 if (window.innerWidth <= 600) {
     const characterInput = document.getElementById('characterInput');
-    const gameContainer = document.querySelector('.game-container');
-    
-    function showKeyboard() {
-        document.body.classList.add('input-focused');
-        gameContainer.classList.add('input-focused');
-    }
-    
-    function hideKeyboard() {
-        document.body.classList.remove('input-focused');
-        gameContainer.classList.remove('input-focused');
-        characterInput.blur();
-    }
-    
     let isSelectingAutocomplete = false;
-    
-    characterInput.addEventListener('focus', showKeyboard);
-    characterInput.addEventListener('blur', function(event) {
-        // Delay blur handling to allow autocomplete selection
-        setTimeout(() => {
-            if (!isSelectingAutocomplete) {
-                document.body.classList.remove('input-focused');
-                gameContainer.classList.remove('input-focused');
-            }
-        }, 150);
-    });
     
     // Prevent keyboard dismissal when tapping autocomplete
     const autoComplete = document.getElementById('autoComplete');
@@ -99,11 +75,14 @@ if (window.innerWidth <= 600) {
         });
     }
     
-    // Dismiss keyboard when guess is submitted
-    characterInput.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-            setTimeout(hideKeyboard, 100); // Small delay to allow guess processing
-        }
+    // Handle blur events with autocomplete interaction check
+    characterInput.addEventListener('blur', function(event) {
+        // Delay blur handling to allow autocomplete selection
+        setTimeout(() => {
+            if (!isSelectingAutocomplete) {
+                // Allow natural keyboard dismissal
+            }
+        }, 150);
     });
 }
 
@@ -419,12 +398,8 @@ function selectSuggestion(character) {
     
     // Different behavior for mobile vs desktop
     if (window.innerWidth <= 600) {
-        // Mobile: dismiss keyboard after selection
-        setTimeout(() => {
-            document.body.classList.remove('input-focused');
-            document.querySelector('.game-container').classList.remove('input-focused');
-            characterInput.blur();
-        }, 100);
+        // Mobile: let browser handle keyboard naturally
+        characterInput.blur();
     } else {
         // Desktop: maintain focus and clear input for next guess
         setTimeout(() => {
