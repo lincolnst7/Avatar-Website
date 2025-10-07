@@ -151,7 +151,7 @@
       "Avatar State",
       "Glassbending",
       "Dust-Stepping",
-      "Lavabending"
+      "Lavabending", "Immortality"
     ],
     "Affiliation/Group": [
       "Avatars",
@@ -301,7 +301,7 @@
       "None"
     ],
     "Affiliation/Group": [
-      "United Forces"
+      "United Forces", "United Republic Leadership"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -318,7 +318,7 @@
     "Place of Origin": "Southern Water Tribe",
     "Bending type": "None",
     "Special Skills": [
-      "Inventor"
+      "None"
     ],
     "Affiliation/Group": [
       "Varrick Enterprises",
@@ -343,7 +343,7 @@
     ],
     "Affiliation/Group": [
       "Varrick Enterprises",
-      "Earth Empire"
+      "Earth Empire", "United Republic Leadership"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -512,7 +512,7 @@
     "Place of Origin": "Northern Air Temple",
     "Bending type": "None",
     "Special Skills": [
-      "Inventor"
+      "None"
     ],
     "Affiliation/Group": [
       "Invasion Fighters"
@@ -1488,8 +1488,7 @@
     "Place of Origin": "Earth Kingdom",
     "Bending type": "None",
     "Special Skills": [
-      "Inventor",
-      "Architect"
+      "None"
     ],
     "Affiliation/Group": [
       "Earth Empire",
@@ -1633,7 +1632,7 @@
     ],
     "Affiliation/Group": [
       "White Lotus",
-      "Northern Water Tribe Leadership"
+      "Northern Water Tribe Leadership", "Bending Instructor"
     ],
     "Appearances": [
       "Avatar: The Last Airbender",
@@ -1655,7 +1654,7 @@
       "None"
     ],
     "Affiliation/Group": [
-      "White Lotus"
+      "White Lotus", "Bending Instructor", "Fire Nation Military"
     ],
     "Appearances": [
       "Avatar: The Last Airbender",
@@ -1942,7 +1941,7 @@
     "Affiliation/Group": [
       "Avatars",
       "Team Avatar",
-      "Fire Ferrets"
+      "Pro-bending"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -2009,7 +2008,6 @@
     "Bending type": "None",
     "Special Skills": [
       "Swordsmanship",
-      "Inventor",
       "Boomerang"
     ],
     "Affiliation/Group": [
@@ -2119,7 +2117,7 @@
     ],
     "Affiliation/Group": [
       "White Lotus",
-      "Fire Nation Royal Family"
+      "Fire Nation Royal Family", "Bending Instructor"
     ],
     "Appearances": [
       "Avatar: The Last Airbender",
@@ -2169,7 +2167,7 @@
     ],
     "Affiliation/Group": [
       "Team Avatar",
-      "Fire Ferrets"
+      "Pro-bending"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -2194,7 +2192,7 @@
     "Affiliation/Group": [
       "Team Avatar",
       "Earth Empire",
-      "Fire Ferrets"
+      "Pro-bending"
     ],
     "Appearances": [
       "The Legend of Korra",
@@ -2211,7 +2209,6 @@
     "Place of Origin": "United Republic",
     "Bending type": "None",
     "Special Skills": [
-      "Inventor",
       "Electrocution"
     ],
     "Affiliation/Group": [
@@ -2232,7 +2229,7 @@
     "Place of Origin": "United Republic",
     "Bending type": "None",
     "Special Skills": [
-      "Inventor"
+      "None"
     ],
     "Affiliation/Group": [
       "The Equalists"
@@ -2295,7 +2292,7 @@
     "Species": [
       "Human"
     ],
-    "Place of Origin": "Earth Kingdom",
+    "Place of Origin": "United Republic",
     "Bending type": "None",
     "Special Skills": [
       "None"
@@ -2673,7 +2670,7 @@
     ],
     "Affiliation/Group": [
       "Team Avatar",
-      "Flying Opera Company"
+      "Flying Opera Company", "Bending Instructor"
     ],
     "Appearances": [
       "Kyoshi Novels"
@@ -2695,7 +2692,7 @@
     ],
     "Affiliation/Group": [
       "Team Avatar",
-      "Flying Opera Company"
+      "Flying Opera Company", "Bending Instructor"
     ],
     "Appearances": [
       "Kyoshi Novels"
@@ -3088,7 +3085,7 @@
       "Pro-bending"
     ],
     "Affiliation/Group": [
-      "Fire Ferrets"
+      "Pro-bending"
     ],
     "Appearances": [
       "The Legend of Korra"
@@ -3123,9 +3120,9 @@
       "Human"
     ],
     "Place of Origin": "Earth Kingdom",
-    "Bending type": "None",
+    "Bending type": "Earthbender",
     "Special Skills": [
-      "Military Strategy"
+      "Metalbending"
     ],
     "Affiliation/Group": [
       "Earth Empire"
@@ -3679,7 +3676,7 @@
   },
   {
     "Name": "Father Glowworm",
-    "Gender": "Unknown",
+    "Gender": "Male",
     "Species": [
       "Spirit"
     ],
@@ -3692,7 +3689,7 @@
       "Spirits"
     ],
     "Appearances": [
-      "Yangchen Novels"
+      "Kyoshi Novels"
     ],
     "Image": "images/characters/Father_Glowworm.jpg"
   },
@@ -3748,7 +3745,7 @@
       "None"
     ],
     "Affiliation/Group": [
-      "None"
+      "United Forces"
     ],
     "Appearances": [
       "The Legend of Korra"
@@ -4063,8 +4060,8 @@
       "None"
     ],
     "Affiliation/Group": [
-      "Air Nun",
-      "Team Avatar"
+      "Air Nuns",
+      "Team Avatar", "Bending Instructor"
     ],
     "Appearances": [
       "Roku Novels"
@@ -4147,7 +4144,7 @@
       "Pet"
     ],
     "Appearances": [
-      "Avatar: the Last Airbender"
+      "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Hawky.jpg"
   },
@@ -4232,7 +4229,7 @@
       "Ba Sing Se"
     ],
     "Appearances": [
-      "Avatar: The Last Airbender"
+      "Avatar: The Last Airbender", "The Legend of Korra"
     ],
     "Image": "images/characters/Professor_Zei.jpg"
   }

@@ -15,6 +15,22 @@ const successMessage = document.getElementById('successMessage');
 const playButton = document.getElementById('playButton');
 const replayButton = document.getElementById('replayButton');
 
+// Function to check if scroll hint should be visible
+function updateScrollHintVisibility() {
+    const scrollHint = document.getElementById('scrollHint');
+    if (scrollHint && gameActive) {
+        const tableWrapper = document.querySelector('.table-scroll-wrapper');
+        if (tableWrapper && tableWrapper.scrollWidth > tableWrapper.clientWidth) {
+            scrollHint.style.display = 'block';
+        } else {
+            scrollHint.style.display = 'none';
+        }
+    }
+}
+
+// Add resize event listener to update scroll hint visibility
+window.addEventListener('resize', updateScrollHintVisibility);
+
 // Load character data
 async function loadCharacters() {
     try {
@@ -43,34 +59,26 @@ function getFilteredCharacters() {
         selectedAppearances.push('The Legend of Korra');
     }
 
-    // Comics (parent auto-includes children)
-    if (document.getElementById('comics').checked) {
-        selectedAppearances.push('Avatar Comics', 'Korra Comics');
-    } else {
-        if (document.getElementById('avatar-comics').checked) {
-            selectedAppearances.push('Avatar Comics');
-        }
-        if (document.getElementById('korra-comics').checked) {
-            selectedAppearances.push('Korra Comics');
-        }
+    // Comics - check individual selections
+    if (document.getElementById('avatar-comics').checked) {
+        selectedAppearances.push('Avatar Comics');
+    }
+    if (document.getElementById('korra-comics').checked) {
+        selectedAppearances.push('Korra Comics');
     }
 
-    // Novels (parent auto-includes children)
-    if (document.getElementById('novels').checked) {
-        selectedAppearances.push('Kyoshi Novels', 'Yangchen Novels', 'Roku Novels', 'Avatar Novels');
-    } else {
-        if (document.getElementById('kyoshi-novels').checked) {
-            selectedAppearances.push('Kyoshi Novels');
-        }
-        if (document.getElementById('yangchen-novels').checked) {
-            selectedAppearances.push('Yangchen Novels');
-        }
-        if (document.getElementById('roku-novels').checked) {
-            selectedAppearances.push('Roku Novels');
-        }
-        if (document.getElementById('avatar-novels').checked) {
-            selectedAppearances.push('Avatar Novels');
-        }
+    // Novels - check individual selections
+    if (document.getElementById('kyoshi-novels').checked) {
+        selectedAppearances.push('Kyoshi Novels');
+    }
+    if (document.getElementById('yangchen-novels').checked) {
+        selectedAppearances.push('Yangchen Novels');
+    }
+    if (document.getElementById('roku-novels').checked) {
+        selectedAppearances.push('Roku Novels');
+    }
+    if (document.getElementById('avatar-novels').checked) {
+        selectedAppearances.push('Avatar Novels');
     }
 
     // 🔎 Debug logs
@@ -108,6 +116,17 @@ function startGame() {
     characterInput.value = '';
     characterInput.focus();
     
+    // Hide column hint text and scroll hint
+    const columnHint = document.getElementById('columnHint');
+    if (columnHint) {
+        columnHint.style.display = 'none';
+    }
+    
+    const scrollHint = document.getElementById('scrollHint');
+    if (scrollHint) {
+        scrollHint.style.display = 'none';
+    }
+    
     // Hide character image
     const characterImage = document.getElementById('characterImage');
     if (characterImage) {
@@ -130,7 +149,7 @@ function startGame() {
         // Create headers
         const headers = document.createElement('div');
         headers.className = 'column-headers';
-        const headerNames = ['Name', 'Gender', 'Species', 'Origin', 'Bending', 'Skills', 'Affiliation', 'Appearances'];
+        const headerNames = ['Name', 'Gender', 'Species', 'Origin', 'Bending', 'Sub-Skills', 'Affiliation', 'Appearances'];
         headerNames.forEach(name => {
             const header = document.createElement('div');
             header.className = 'column-header';
@@ -148,6 +167,13 @@ function startGame() {
         
         // Insert wrapper into game area
         gameArea.appendChild(tableWrapper);
+        
+        // Move scroll hint after table wrapper
+        const scrollHint = document.getElementById('scrollHint');
+        if (scrollHint) {
+            scrollHint.parentNode.removeChild(scrollHint);
+            gameArea.appendChild(scrollHint);
+        }
     }
 
     // Hide column headers initially until first guess
@@ -161,6 +187,9 @@ function startGame() {
     if (checkboxContainer.parentElement === gameComplete) {
         gameSettings.appendChild(checkboxContainer);
     }
+    
+    // Initial check for scroll hint visibility
+    setTimeout(updateScrollHintVisibility, 100); // Use timeout to ensure DOM is fully rendered
 }
 
 // Handle character input and autocomplete
@@ -442,6 +471,17 @@ function displayGuess(character, results) {
     // Insert at the beginning of guessRows
     guessRows.insertBefore(row, guessRows.firstChild);
     row.classList.add('show');
+    
+    // Show column hint text and scroll hint on first guess
+    if (guessRows.children.length === 1) {
+        const columnHint = document.getElementById('columnHint');
+        if (columnHint) {
+            columnHint.style.display = 'block';
+        }
+        
+        // Update scroll hint visibility based on actual scroll need
+        updateScrollHintVisibility();
+    }
 }
 
 // Handle guess submission
@@ -458,7 +498,8 @@ function handleGuess(character) {
         gameActive = false;
         gameComplete.style.display = 'block';
         gameComplete.style.marginBottom = '1rem';
-        successMessage.textContent = `Congratulations! You found ${targetCharacter.Name} in ${guessCount} guesses!`;
+        const guessText = guessCount === 1 ? 'guess' : 'guesses';
+        successMessage.textContent = `Congratulations! You found ${targetCharacter.Name} in ${guessCount} ${guessText}!`;
         
         // Show character image
         const characterImage = document.getElementById('characterImage');
@@ -475,9 +516,15 @@ function handleGuess(character) {
         gameArea.insertBefore(gameComplete, gameArea.firstChild);
         gameArea.classList.add('game-won');
         
-        // Hide instructions only when game is won
+        // Hide instructions, column hint, and scroll hint when game is won
         const instructions = document.querySelector('.game-instructions');
         if (instructions) instructions.style.display = 'none';
+        
+        const columnHint = document.getElementById('columnHint');
+        if (columnHint) columnHint.style.display = 'none';
+        
+        const scrollHint = document.getElementById('scrollHint');
+        if (scrollHint) scrollHint.style.display = 'none';
         
         // Move checkboxes to game complete area
         const checkboxContainer = document.querySelector('.checkbox-container');
@@ -528,9 +575,15 @@ function handleGiveUp() {
     gameArea.classList.add('game-won');
     gameArea.insertBefore(gameComplete, gameArea.firstChild);
     
-    // Hide instructions only when game ends
+    // Hide instructions, column hint, and scroll hint when game ends
     const instructions = document.querySelector('.game-instructions');
     if (instructions) instructions.style.display = 'none';
+    
+    const columnHint = document.getElementById('columnHint');
+    if (columnHint) columnHint.style.display = 'none';
+    
+    const scrollHint = document.getElementById('scrollHint');
+    if (scrollHint) scrollHint.style.display = 'none';
     
     // Move checkboxes to game complete area
     const checkboxContainer = document.querySelector('.checkbox-container');
@@ -635,7 +688,7 @@ function getColumnValues(columnName) {
         'Species': 'Species',
         'Origin': 'Place of Origin',
         'Bending': 'Bending type',
-        'Skills': 'Special Skills',
+        'Sub-Skills': 'Special Skills',
         'Affiliation': 'Affiliation/Group',
         'Appearances': 'Appearances'
     };
@@ -643,8 +696,11 @@ function getColumnValues(columnName) {
     const fieldName = fieldMapping[columnName];
     const valueCounts = {};
     
-    // Count occurrences of each value
-    characters.forEach(char => {
+    // Use filtered characters based on current checkbox selections
+    const filteredCharacters = getFilteredCharacters();
+    
+    // Count occurrences of each value in filtered set
+    filteredCharacters.forEach(char => {
         const value = char[fieldName];
         if (Array.isArray(value)) {
             value.forEach(v => {
@@ -714,5 +770,31 @@ characterInput.addEventListener('keypress', (e) => {
         if (character) {
             handleGuess(character);
         }
+    }
+});
+
+// Global Enter key listener for play button activation
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        // Don't trigger if the enter key was used in the character input field
+        if (e.target === characterInput) {
+            return;
+        }
+        
+        // Check if we're on the game settings screen (play button visible)
+        if (gameSettings.style.display !== 'none' && playButton.style.display !== 'none') {
+            playButton.click();
+        }
+        // Check if we're on the game over screen (replay button visible)
+        else if (gameComplete.style.display === 'block') {
+            replayButton.click();
+        }
+    }
+});
+
+// Hide autocomplete when clicking outside of input or autocomplete
+document.addEventListener('click', (e) => {
+    if (!characterInput.contains(e.target) && !autoComplete.contains(e.target)) {
+        autoComplete.innerHTML = '';
     }
 });
