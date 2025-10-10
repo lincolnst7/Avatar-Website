@@ -373,21 +373,27 @@ body {
         background-repeat: no-repeat;
     }
     
+    .guess-input-container {
+        padding: 0 7.5vw; /* Center the input and create proper bounds */
+        box-sizing: border-box;
+    }
+    
     #characterInput {
-        width: 85vw;
+        width: 100%; /* Fill the constrained container */
         max-width: none;
     }
     
     .autocomplete-items {
         position: absolute;
-        width: 85vw;
+        width: 100%; /* Use full width of the constrained container */
         max-width: none;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0; /* Align with container, not viewport */
+        transform: none; /* Remove centering transform */
         top: 100%;
         z-index: 1000;
         max-height: 200px;
         overflow-y: auto;
+        box-sizing: border-box;
     }
     
     /* Prevent viewport changes when keyboard appears */
