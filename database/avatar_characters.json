@@ -20,7 +20,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Fire_Lord_Ozai.jpg",
-    "Hints": []
+    "Hints": ["“You will learn respect, and suffering will be your teacher.”"]
   },
   {
     "Name": "Naga",
@@ -86,7 +86,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Jinora.jpg",
-    "Hints": []
+    "Hints": ["“The world's in trouble... I have to go help.”"]
   },
   {
     "Name": "Avatar Roku",
@@ -115,7 +115,7 @@
       "Roku Novels"
     ],
     "Image": "images/characters/Avatar_Roku.jpg",
-    "Hints": []
+    "Hints": ["“Some friendships are so strong they can even transcend lifetimes.”"]
   },
   {
     "Name": "Fang",
@@ -173,7 +173,7 @@
       "Roku Novels"
     ],
     "Image": "images/characters/Avatar_Kyoshi.jpg",
-    "Hints": []
+    "Hints": ["“Only justice will bring peace.”"]
   },
   {
     "Name": "Avatar Kuruk",
@@ -201,7 +201,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Avatar_Kuruk.jpg",
-    "Hints": []
+    "Hints": ["“You must actively shape your destiny, and the destiny of the world.”"]
   },
   {
     "Name": "Koh the Face Stealer",
@@ -221,7 +221,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Koh_the_Face_Stealer.jpg",
-    "Hints": []
+    "Hints": ["“You've already met them, actually.”"]
   },
   {
     "Name": "Hei Bai",
@@ -261,7 +261,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Raava.jpg",
-    "Hints": []
+    "Hints": ["“Do not give in to ten thousand years of darkness. You are the Avatar.”"]
   },
   {
     "Name": "Vaatu",
@@ -281,7 +281,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Vaatu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Aye-aye Spirit",
@@ -301,7 +301,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Aye_aye_Spirit.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "President Raiko",
@@ -323,7 +323,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/President_Raiko.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Sir Iknik Blackstone Varrick",
@@ -345,7 +345,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Sir_Iknik_Blackstone_Varrick.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Zhu Li Moon",
@@ -368,7 +368,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Zhu_Li_Moon.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "General Iroh II",
@@ -391,7 +391,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/General_Iroh_II.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tarrlok",
@@ -413,7 +413,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Tarrlok.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tahno",
@@ -435,7 +435,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Tahno.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Shiro Shinobi",
@@ -458,7 +458,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Shiro_Shinobi.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Earth King Kuei",
@@ -481,7 +481,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Earth_King_Kuei.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Haru",
@@ -504,7 +504,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Haru.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tyro",
@@ -527,7 +527,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Tyro.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "The Mechanist",
@@ -547,7 +547,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/The_Mechanist.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Teo",
@@ -568,7 +568,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Teo.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "June",
@@ -589,7 +589,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/June.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Nyla",
@@ -610,7 +610,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Nyla.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Lao Beifong",
@@ -631,7 +631,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Lao_Beifong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Poppy Beifong",
@@ -652,7 +652,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Poppy_Beifong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "The Boulder",
@@ -676,7 +676,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/The_Boulder.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Big Bad Hippo",
@@ -699,7 +699,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Big_Bad_Hippo.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Jin",
@@ -723,7 +723,7 @@
       "Avatar Novels"
     ],
     "Image": "images/characters/Jin.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Aunt Wu",
@@ -743,7 +743,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Aunt_Wu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ghashiun",
@@ -765,7 +765,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Ghashiun.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Huu",
@@ -787,7 +787,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Huu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tho",
@@ -809,7 +809,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Tho.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Due",
@@ -831,7 +831,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Due.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Earth Queen Hou-Ting",
@@ -852,7 +852,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Earth_Queen_Hou_Ting.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Prince Wu",
@@ -873,7 +873,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Prince_Wu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Fire Lord Sozin",
@@ -897,7 +897,7 @@
       "Roku Novels"
     ],
     "Image": "images/characters/Fire_Lord_Sozin.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Mai",
@@ -918,7 +918,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Mai.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ty Lee",
@@ -940,7 +940,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Ty_Lee.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ursa",
@@ -961,7 +961,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Ursa.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Fire Lord Azulon",
@@ -984,7 +984,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Fire_Lord_Azulon.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Lu Ten",
@@ -1006,7 +1006,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Lu_Ten.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Shyu",
@@ -1029,7 +1029,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Shyu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Yon Rha",
@@ -1051,7 +1051,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Yon_Rha.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Fire Lord Izumi",
@@ -1073,7 +1073,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Fire_Lord_Izumi.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Chief Hakoda",
@@ -1095,7 +1095,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Chief_Hakoda.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kya",
@@ -1116,7 +1116,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Kya.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kya II",
@@ -1139,7 +1139,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Kya_II.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Bato",
@@ -1160,7 +1160,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Bato.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Chief Arnook",
@@ -1180,7 +1180,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Chief_Arnook.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kanna (Gran Gran)",
@@ -1201,7 +1201,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Kanna.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Yagoda",
@@ -1223,7 +1223,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Yagoda.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Hahn",
@@ -1243,7 +1243,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Hahn.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Hama",
@@ -1265,7 +1265,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Hama.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Chief Tonraq",
@@ -1288,7 +1288,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Chief_Tonraq.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Chief Unalaq",
@@ -1312,7 +1312,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Chief_Unalaq.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Eska",
@@ -1335,7 +1335,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Eska.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Desna",
@@ -1358,7 +1358,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Desna.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Monk Gyatso",
@@ -1382,7 +1382,7 @@
       "Roku Novels"
     ],
     "Image": "images/characters/Monk_Gyatso.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ikki",
@@ -1406,7 +1406,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Ikki.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Meelo",
@@ -1430,7 +1430,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Meelo.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Bumi II",
@@ -1454,7 +1454,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Bumi_II.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kai",
@@ -1477,7 +1477,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Kai.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Opal Beifong",
@@ -1502,7 +1502,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Opal_Beifong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Suyin Beifong",
@@ -1527,7 +1527,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Suyin_Beifong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Baatar",
@@ -1549,7 +1549,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Baatar.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Baatar Jr.",
@@ -1572,7 +1572,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Baatar_Jr_.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Huan",
@@ -1596,7 +1596,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Huan.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Wei Beifong",
@@ -1620,7 +1620,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Wei_Beifong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Wing Beifong",
@@ -1644,7 +1644,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Wing_Beifong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Aiwei",
@@ -1669,7 +1669,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Aiwei.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "King Bumi",
@@ -1693,7 +1693,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/King_Bumi.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Master Pakku",
@@ -1718,7 +1718,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Master_Pakku.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Master Jeong Jeong",
@@ -1743,7 +1743,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Master_Jeong_Jeong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Master Piandao",
@@ -1763,7 +1763,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Master_Piandao.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Zaheer",
@@ -1785,7 +1785,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Zaheer.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ming-Hua",
@@ -1807,7 +1807,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Ming_Hua.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ghazan",
@@ -1829,7 +1829,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Ghazan.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "P'Li",
@@ -1851,7 +1851,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/P_Li.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Jet",
@@ -1872,7 +1872,7 @@
       "Avatar Novels"
     ],
     "Image": "images/characters/Jet.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Pipsqueak",
@@ -1894,7 +1894,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Pipsqueak.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Smellerbee",
@@ -1916,7 +1916,7 @@
       "Avatar Novels"
     ],
     "Image": "images/characters/Smellerbee.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Longshot",
@@ -1938,7 +1938,7 @@
       "Avatar Novels"
     ],
     "Image": "images/characters/Longshot.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "The Duke",
@@ -1960,7 +1960,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/The_Duke.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Lieutenant",
@@ -1980,7 +1980,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Lieutenant.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Avatar Aang",
@@ -2012,7 +2012,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Avatar_Aang.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Avatar Korra",
@@ -2045,7 +2045,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Avatar_Korra.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Senna",
@@ -2068,7 +2068,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Senna.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Katara",
@@ -2096,7 +2096,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Katara.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Sokka",
@@ -2121,7 +2121,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Sokka.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Toph Beifong",
@@ -2153,7 +2153,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Toph_Beifong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Suki",
@@ -2175,7 +2175,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Suki.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Zuko",
@@ -2203,7 +2203,7 @@
       "Avatar Novels"
     ],
     "Image": "images/characters/Zuko.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Uncle Iroh",
@@ -2232,7 +2232,7 @@
       "Avatar Novels"
     ],
     "Image": "images/characters/Uncle_Iroh.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Azula",
@@ -2256,7 +2256,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Azula.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Mako",
@@ -2282,7 +2282,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Mako.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Bolin",
@@ -2308,7 +2308,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Bolin.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Asami Sato",
@@ -2329,7 +2329,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Asami_Sato.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Hiroshi Sato",
@@ -2349,7 +2349,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Hiroshi_Sato.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Lin Beifong",
@@ -2373,7 +2373,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Lin_Beifong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tenzin",
@@ -2398,7 +2398,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Tenzin.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Pema",
@@ -2420,7 +2420,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Pema.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Amon",
@@ -2442,7 +2442,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Amon.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kuvira",
@@ -2466,7 +2466,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Kuvira.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Rohan",
@@ -2490,7 +2490,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Rohan.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Avatar Wan",
@@ -2515,7 +2515,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Avatar_Wan.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Wan Shi Tong",
@@ -2537,7 +2537,7 @@
       "Roku Novels"
     ],
     "Image": "images/characters/Wan_Shi_Tong.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Mula",
@@ -2557,7 +2557,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Mula.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Appa",
@@ -2582,7 +2582,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Appa.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Momo",
@@ -2603,7 +2603,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Momo.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Oogi",
@@ -2650,7 +2650,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Combustion_Man__Sparky_Sparky_Boom_Man_.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Rangi",
@@ -2672,7 +2672,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Rangi.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Jianzhu",
@@ -2694,7 +2694,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Jianzhu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kelsang",
@@ -2716,7 +2716,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Kelsang.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Hei-Ran",
@@ -2738,7 +2738,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Hei_Ran.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tagaka",
@@ -2760,7 +2760,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Tagaka.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Lek",
@@ -2783,7 +2783,7 @@
       "Kyoshi Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kirima",
@@ -2808,7 +2808,7 @@
       "Kyoshi Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Wong",
@@ -2832,7 +2832,7 @@
       "Kyoshi Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Jinpa",
@@ -2856,7 +2856,7 @@
       "Kyoshi Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tui",
@@ -2879,7 +2879,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Tui.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "La",
@@ -2926,7 +2926,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Admiral_Zhao.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "General Fong",
@@ -2970,7 +2970,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Long_Feng.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Xin Fu",
@@ -2992,7 +2992,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Xin_Fu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Master Yu",
@@ -3014,7 +3014,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Master_Yu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Song",
@@ -3034,7 +3034,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Song.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "On Ji",
@@ -3054,7 +3054,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/On_Ji.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Lo",
@@ -3076,7 +3076,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Lo.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Li",
@@ -3098,7 +3098,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Li.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ran",
@@ -3122,7 +3122,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Ran.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Shaw",
@@ -3146,7 +3146,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Shaw.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Avatar Yangchen",
@@ -3175,7 +3175,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Avatar_Yangchen.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Avatar Szeto",
@@ -3204,7 +3204,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Avatar_Szeto.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Shady Shin",
@@ -3224,7 +3224,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Shady_Shin.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Toza",
@@ -3244,7 +3244,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Toza.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Lightning Bolt Zolt",
@@ -3266,7 +3266,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Lightning_Bolt_Zolt.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Commander Guan",
@@ -3286,7 +3286,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Commander_Guan.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Yin",
@@ -3306,7 +3306,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Yin.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tu",
@@ -3327,7 +3327,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Tu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Gun",
@@ -3347,7 +3347,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Gun.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Skoochy",
@@ -3367,7 +3367,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Skoochy.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ryu",
@@ -3389,7 +3389,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Ryu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Yakone",
@@ -3411,7 +3411,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Yakone.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Daw",
@@ -3433,7 +3433,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Daw.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Two-Toed Ping",
@@ -3454,7 +3454,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Two_Toed_Ping.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Doc/Xu/Bushi",
@@ -3474,7 +3474,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Doc_Xu_Bushi.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "The Painted Lady",
@@ -3495,7 +3495,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Painted_Lady.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Yun",
@@ -3517,7 +3517,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Yun.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Lao Ge",
@@ -3539,7 +3539,7 @@
       "Kyoshi Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Xu Ping An",
@@ -3559,7 +3559,7 @@
       "Kyoshi Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Amak",
@@ -3581,7 +3581,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Amak.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Akuudan",
@@ -3601,7 +3601,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ayunerak",
@@ -3623,7 +3623,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Henshe",
@@ -3643,7 +3643,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Jetsun",
@@ -3665,7 +3665,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Jujinta",
@@ -3686,7 +3686,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Nujian",
@@ -3729,7 +3729,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Thapa",
@@ -3751,7 +3751,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Yingsu",
@@ -3773,7 +3773,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Xiaoyun",
@@ -3795,7 +3795,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Chaisee",
@@ -3815,7 +3815,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kalyaan",
@@ -3835,7 +3835,7 @@
       "Yangchen Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kavik",
@@ -3855,7 +3855,7 @@
       "Yangchen Novels"
     ],
     "Image": "images/characters/Kavik.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Father Glowworm",
@@ -3875,7 +3875,7 @@
       "Kyoshi Novels"
     ],
     "Image": "images/characters/Father_Glowworm.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Cabbage Merchant (Cai)",
@@ -3896,7 +3896,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Cabbage_Merchant.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Joo Dee",
@@ -3917,7 +3917,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Joo_Dee.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Gommu",
@@ -3937,7 +3937,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Gommu.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Yue",
@@ -3959,7 +3959,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Yue.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kuzon",
@@ -3981,7 +3981,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Kuzon.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "General Old Iron",
@@ -4001,7 +4001,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/General_Old_Iron.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Sneers",
@@ -4022,7 +4022,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Sneers.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kori Morishita",
@@ -4044,7 +4044,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Kori_Morishita.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Ho Tun",
@@ -4064,7 +4064,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Ho_Tun.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Penga",
@@ -4084,7 +4084,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Penga.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "The Dark One",
@@ -4104,7 +4104,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/The_Dark_One.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Hope",
@@ -4124,7 +4124,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Hope.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kiyi",
@@ -4144,7 +4144,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Kiyi.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Kei Lo",
@@ -4164,7 +4164,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Kei_Lo.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Tom-Tom",
@@ -4185,7 +4185,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Tom_Tom.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "The Warden",
@@ -4206,7 +4206,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/The_Warden.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Chit Sang",
@@ -4228,7 +4228,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Chit_Sang.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Chief Saikhan",
@@ -4248,7 +4248,7 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Chief_Saikhan.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Sister Disha",
@@ -4270,7 +4270,7 @@
       "Roku Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Malaya",
@@ -4292,7 +4292,7 @@
       "Roku Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Amihan",
@@ -4314,7 +4314,7 @@
       "Roku Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Chief Ulo",
@@ -4334,7 +4334,7 @@
       "Roku Novels"
     ],
     "Image": "",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Hawky",
@@ -4372,7 +4372,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Meng.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Noren/Ikem",
@@ -4390,7 +4390,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Noren.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Mother of Faces",
@@ -4408,7 +4408,7 @@
       "Avatar Comics"
     ],
     "Image": "images/characters/Mother_of_Faces.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Guru Pathik",
@@ -4426,7 +4426,7 @@
       "Avatar: The Last Airbender"
     ],
     "Image": "images/characters/Guru_Pathik.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   },
   {
     "Name": "Professor Zei",
@@ -4445,6 +4445,6 @@
       "The Legend of Korra"
     ],
     "Image": "images/characters/Professor_Zei.jpg",
-    "Hints": []
+    "Hints": ["“”"]
   }
 ]
