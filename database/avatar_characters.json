@@ -1502,7 +1502,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Opal_Beifong.jpg",
-    "Hints": ["“”"]
+    "Hints": ["“I don't care about the oath! I have to save my family!”"]
   },
   {
     "Name": "Suyin Beifong",
@@ -1527,7 +1527,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Suyin_Beifong.jpg",
-    "Hints": ["“”"]
+    "Hints": ["“No wonder Tenzin ended things with you years ago.”"]
   },
   {
     "Name": "Baatar",
@@ -1549,7 +1549,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Baatar.jpg",
-    "Hints": ["“”"]
+    "Hints": ["“Sorry, dear, I'm going to have to take dinner to my office. I just had a major breakthrough on the tram station model.”"]
   },
   {
     "Name": "Baatar Jr.",
@@ -1572,10 +1572,10 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Baatar_Jr_.jpg",
-    "Hints": ["“”"]
+    "Hints": ["“And you of all people should realize that once a discovery is made, it is our responsibility as scientists to pursue it as far as we can. Wherever it leads.”"]
   },
   {
-    "Name": "Huan",
+    "Name": "Huan Beifong",
     "Gender": "Male",
     "Species": [
       "Human"
@@ -1596,7 +1596,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Huan.jpg",
-    "Hints": ["“”"]
+    "Hints": ["“You're crushing my individuality!”"]
   },
   {
     "Name": "Wei Beifong",
@@ -1620,7 +1620,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Wei_Beifong.jpg",
-    "Hints": ["“”"]
+    "Hints": ["“I wanna power disc your face.”"]
   },
   {
     "Name": "Wing Beifong",
@@ -1644,7 +1644,7 @@
       "Korra Comics"
     ],
     "Image": "images/characters/Wing_Beifong.jpg",
-    "Hints": ["“”"]
+    "Hints": ["“I can't believe I'm sparring with the Avatar!”"]
   },
   {
     "Name": "Aiwei",
