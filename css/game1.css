@@ -103,6 +103,36 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+/* Hint display styling */
+.hint-display {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hint-content {
+    color: white;
+    font-family: "SpiritITC", Arial, sans-serif;
+}
+
+.hint-title {
+    font-weight: bold;
+    color: #4caf50;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.hint-text {
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
 /* Scroll hint text styling - only visible when scrolling is needed */
 .scroll-hint {
     display: none;
@@ -519,6 +549,21 @@ body {
         max-width: none !important;
         width: 100vw !important;
         overflow-x: hidden;
+    }
+    
+    /* Mobile hint display styling */
+    .hint-display {
+        margin: 0.8rem 1rem;
+        padding: 0.6rem 0.8rem;
+        max-width: calc(100vw - 2rem);
+    }
+    
+    .hint-title {
+        font-size: 1rem;
+    }
+    
+    .hint-text {
+        font-size: 0.9rem;
     }
     
     /* Arrange checkboxes in specific rows of 2 on mobile - applies to both game settings and game over */

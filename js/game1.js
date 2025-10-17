@@ -3,6 +3,7 @@ let characters = [];
 let targetCharacter = null;
 let guessCount = 0;
 let gameActive = false;
+let hintIndex = 0; // Track which hint we're on
 
 // DOM Elements
 const gameSettings = document.getElementById('gameSettings');
@@ -175,6 +176,9 @@ function startGame() {
     targetCharacter = filteredCharacters[Math.floor(Math.random() * filteredCharacters.length)];
     guessCount = 0;
     gameActive = true;
+    
+    // Reset hints for new game
+    resetHints();
     
     // Show/hide appropriate elements
     gameSettings.style.display = 'none';
@@ -413,8 +417,11 @@ function selectSuggestion(character) {
 function checkGuess(guess) {
     const results = {};
     
-    // Compare each property
+    // Compare each property (excluding Hints and Image)
     Object.keys(guess).forEach(key => {
+        if (key === 'Hints' || key === 'Image') {
+            return; // Skip Hints and Image columns
+        }
         if (key === 'Appearances') {
             // Check for overlap in appearances
             const intersection = guess[key].filter(x => targetCharacter[key].includes(x));
@@ -495,7 +502,7 @@ function displayGuess(character, results) {
 
     let colIndex = 0;
     Object.entries(results).forEach(([key, result], index) => {
-        if (key !== 'Image') {  // Skip the Image column
+        if (key !== 'Image' && key !== 'Hints') {  // Skip the Image and Hints columns
             const cell = document.createElement('div');
             cell.className = `guess-cell ${result}`;
             // For the leftmost cell (Name), add image above name, stacked vertically
@@ -596,7 +603,7 @@ function handleGuess(character) {
         gameArea.insertBefore(gameComplete, gameArea.firstChild);
         gameArea.classList.add('game-won');
         
-        // Hide instructions, column hint, and scroll hint when game is won
+        // Hide instructions, column hint, scroll hint, and hint display when game is won
         const instructions = document.querySelector('.game-instructions');
         if (instructions) instructions.style.display = 'none';
         
@@ -605,6 +612,9 @@ function handleGuess(character) {
         
         const scrollHint = document.getElementById('scrollHint');
         if (scrollHint) scrollHint.style.display = 'none';
+        
+        const hintDisplay = document.getElementById('hintDisplay');
+        if (hintDisplay) hintDisplay.style.display = 'none';
         
         // Settings button is now part of the game complete HTML
         
@@ -653,7 +663,7 @@ function handleGiveUp() {
     gameArea.classList.add('game-won');
     gameArea.insertBefore(gameComplete, gameArea.firstChild);
     
-    // Hide instructions, column hint, and scroll hint when game ends
+    // Hide instructions, column hint, scroll hint, and hint display when game ends
     const instructions = document.querySelector('.game-instructions');
     if (instructions) instructions.style.display = 'none';
     
@@ -663,10 +673,67 @@ function handleGiveUp() {
     const scrollHint = document.getElementById('scrollHint');
     if (scrollHint) scrollHint.style.display = 'none';
     
+    const hintDisplay = document.getElementById('hintDisplay');
+    if (hintDisplay) hintDisplay.style.display = 'none';
+    
     // Settings button is now part of the game complete HTML
     
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Show hint functionality
+function showHint() {
+    if (!gameActive || !targetCharacter) return;
+    
+    const hintDisplay = document.getElementById('hintDisplay');
+    const hintTitle = document.querySelector('.hint-title');
+    const hintText = document.querySelector('.hint-text');
+    
+    // Check if target character has hints
+    if (!targetCharacter.Hints || !Array.isArray(targetCharacter.Hints) || targetCharacter.Hints.length === 0) {
+        return; // No hints available, do nothing
+    }
+    
+    // Check if we've shown all available hints
+    if (hintIndex >= targetCharacter.Hints.length) {
+        return; // No more hints available
+    }
+    
+    // Get the current hint
+    const currentHint = targetCharacter.Hints[hintIndex];
+    
+    // Skip empty hints
+    if (!currentHint || currentHint.trim() === '') {
+        hintIndex++;
+        showHint(); // Recursively try next hint
+        return;
+    }
+    
+    // Update hint display
+    hintTitle.textContent = `Hint ${hintIndex + 1}:`;
+    hintText.textContent = currentHint;
+    hintDisplay.style.display = 'block';
+    
+    // Automatically focus the input box so player can continue typing
+    const characterInput = document.getElementById('characterInput');
+    if (characterInput) {
+        setTimeout(() => {
+            characterInput.focus();
+        }, 100); // Small delay to ensure hint display is rendered first
+    }
+    
+    // Increment hint index for next time
+    hintIndex++;
+}
+
+// Reset hints when starting a new game
+function resetHints() {
+    hintIndex = 0;
+    const hintDisplay = document.getElementById('hintDisplay');
+    if (hintDisplay) {
+        hintDisplay.style.display = 'none';
+    }
 }
 
 // Handle checkbox interactions
@@ -746,11 +813,8 @@ function setupButtonListeners() {
         }
     });
 
-    // Hint button - placeholder for now
-    hintButton.addEventListener('click', () => {
-        // TODO: Add hint functionality later
-        console.log('Hint button clicked - functionality to be added');
-    });
+    // Hint button functionality
+    hintButton.addEventListener('click', showHint);
 
     // Give up button
     giveUpButton.addEventListener('click', handleGiveUp);
